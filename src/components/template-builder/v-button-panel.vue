@@ -413,9 +413,9 @@
               <p class="subtitle">{seance_start_time}</p>
             </div>
             <div class="wrapper_btn">
-              <button :disabled="$store.state.arrays.seanceStartTimeArray.length == 0" class="addbutton" @click="RemoveStartTimeR">-</button>
+              <button :disabled="$store.state.arrays.seanceStartTimeArrayR.length == 0" class="addbutton" @click="RemoveStartTimeR">-</button>
               <div v-bind:class="roundStartTimeR"></div>
-              <button :disabled="$store.state.arrays.seanceStartTimeArray.length > 0" class="addbutton" @click="AddStartTimeR">+</button>
+              <button :disabled="$store.state.arrays.seanceStartTimeArrayR.length > 0" class="addbutton" @click="AddStartTimeR">+</button>
             </div>
             <input v-model="setValueTopStartTimeR" :disabled="$store.state.arrays.seanceStartTimeArrayR.length == 0" class="input__value"  type="number" placeholder="Сверху mm">
             <input v-model="setValueLeftStartTimeR" :disabled="$store.state.arrays.seanceStartTimeArrayR.length == 0" class="input__value"  type="number" placeholder="Слева mm">
