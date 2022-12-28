@@ -267,7 +267,7 @@ export default {
         weightDatamax: 'P010',
         tag: 'Стоимость услуги: {payment_orig} руб.',
         tag2: '{case_ticket}',
-        utfTag: '{case_ticket} Стоимость услуги: {payment_orig} руб.'
+        utfTag: 'Стоимость услуги: {payment_orig} руб.'
       },
       case_invitation: {
         name: 'Приглашение',
@@ -287,7 +287,7 @@ export default {
         weightDatamax: 'P010',
         tag: 'Приглашение',
         tag2: '{case_invitation}',
-        utfTag: '{case_invitation}Приглашение'
+        utfTag: 'Приглашение'
       },
       ticket_title: {
         name: 'Билет:9674280201',
@@ -380,7 +380,7 @@ export default {
         staticDatamax: '4E00100',
         staticCustom: '{field_barcode_code128}<NCP10,12>{A{field_barcode_code128}',
         tag: '{field_barcode_code128}',
-        tag2: '{field_barcode_code128}'
+        barcodeTag: '{field_barcode_code128}'
       },
       event_seance_start_date: {
         name: 'Дата',
@@ -689,7 +689,7 @@ export default {
         weightDatamax: 'P008',
         tag: 'Стоимость услуги: {payment_orig} руб.',
         tag2: '{case_ticket}',
-        utfTag: '{case_ticket}Стоимость услуги: {payment_orig} руб.'
+        utfTag: 'Стоимость услуги: {payment_orig} руб.'
       },
       case_invitation: {
         name: 'Приглашение',
@@ -709,7 +709,7 @@ export default {
         weightDatamax: 'P008',
         tag: 'Приглашение',
         tag2: '{case_invitation}',
-        utfTag: '{case_invitation}Приглашение'
+        utfTag: 'Приглашение'
       },
       ticket_title: {
         name: 'Билет:9674280201',
@@ -802,7 +802,7 @@ export default {
         staticDatamax: '1E00100',
         staticCustom: '{field_barcode_code128}<NCL10,12>{A{field_barcode_code128}',
         tag: '{field_barcode_code128}',
-        tag2: '{field_barcode_code128}'
+        barcodeTag: '{field_barcode_code128}'
       },
       event_seance_start_date: {
         name: 'Дата',

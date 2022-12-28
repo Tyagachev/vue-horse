@@ -15,7 +15,7 @@
         <div>{{el.ttf}}</div>
         <div>{{el.fontSize}}</div>
         <div>{{el.fontWeight}}</div>
-        <div>{{el.rcTag}}{{el.originalForCustomX}}<span>,</span>{{el.originalForCustomY}}<span>></span>{{el.staticCustom}}{{el.utfTag}}</div>
+        <div>{{el.tag2}}{{el.rcTag}}{{el.originalForCustomY}}<span>,</span>{{el.originalForCustomX}}<span>></span>{{el.staticCustom}}{{el.utfTag}}</div>
       </li>
     </ul>
     <hr>
@@ -24,7 +24,7 @@
       <li class="build_list-custom" @click="RemoveIndexTicket(idx)" v-for="(el, idx) in $store.state.arrays.templateArray" :key="idx">
         <div>{{el.fontSize}}</div>
         <div>{{el.fontWeight}}</div>
-        <div>{{el.rcTag}}{{el.originalForCustomX}}<span>,</span>{{el.originalForCustomY}}<span>></span>{{el.staticCustom}}{{el.utfTag}}</div>
+        <div>{{el.tag2}}{{el.rcTag}}{{el.originalForCustomY}}<span>,</span>{{el.originalForCustomX}}<span>></span>{{el.staticCustom}}{{el.utfTag}}</div>
       </li>
     </ul>
     <p></p>
@@ -50,8 +50,7 @@ export default {
       arrCenter: ['<SP0><BA0>', '<X2,L>', '<F:arial.ttf>', '<F:enc:ascii>'],
       arrBottom: ['<P>', '<CUT>'],
       textHorizontal: '<NR>',
-      textRotateСlockwise: '<RL>',
-      notch: this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI
+      textRotateСlockwise: '<RL>'
     }
   },
   computed: {},
