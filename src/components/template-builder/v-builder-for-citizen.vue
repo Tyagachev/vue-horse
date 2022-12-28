@@ -10,9 +10,9 @@
       </li>
     </ul>
 
-    <div class="template_list" @click="RemoveIndexRootlet(idx)" v-for="(el, idx) in $store.state.arrays.templateArrayRootlet" :key="idx">{{el.tag2}}{{el.static}}{{el.originalX}}{{el.originalY}}{{el.tag}}</div>
+    <div class="template_list" @click="RemoveIndexRootlet(idx)" v-for="(el, idx) in $store.state.arrays.templateArrayRootlet" :key="idx">{{el.tag2}}{{el.barcodeTag}}{{el.static}}{{el.originalX}}{{el.originalY}}{{el.tag}}</div>
     <hr>
-    <div class="template_list" @click="RemoveIndexTicket(idx)" v-for="(el, idx) in $store.state.arrays.templateArray" :key="idx">{{el.tag2}}{{el.static}}{{el.originalX}}{{el.originalY}}{{el.tag}}</div>
+    <div class="template_list" @click="RemoveIndexTicket(idx)" v-for="(el, idx) in $store.state.arrays.templateArray" :key="idx">{{el.tag2}}{{el.barcodeTag}}{{el.static}}{{el.originalX}}{{el.originalY}}{{el.tag}}</div>
 
     <ul class="build_list-padding">
       <li class="build_list" v-for="(el,idx) in arrBottom" :key="idx">
