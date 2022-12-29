@@ -1554,97 +1554,144 @@ export default {
      * Заполнение массивов билета
      */
 
-    ...mapMutations({ AddPromoterComp: 'AddPromoterComp', RemovePromoterComp: 'RemovePromoterComp' }),
+    ...mapMutations({
 
-    ...mapMutations({ AddPromoterInn: 'AddPromoterInn', RemovePromoterInn: 'RemovePromoterInn' }),
+      AddPromoterComp: 'ADD_PROMOTER_COMP',
+      RemovePromoterComp: 'REMOVE_PROMOTER_COMP',
 
-    ...mapMutations({ AddPromoterAddress: 'AddPromoterAddress', RemovePromoterAddress: 'RemovePromoterAddress' }),
+      AddPromoterInn: 'ADD_PROMOTER_INN',
+      RemovePromoterInn: 'REMOVE_PROMOTER_INN',
 
-    ...mapMutations({ AddEventTitleStrOne: 'AddEventTitleStrOne', RemoveEventTitleStrOne: 'RemoveEventTitleStrOne' }),
+      AddPromoterAddress: 'ADD_PROMOTER_ADDRESS',
+      RemovePromoterAddress: 'REMOVE_PROMOTER_ADDRESS',
 
-    ...mapMutations({ AddEventTitleStrTwo: 'AddEventTitleStrTwo', RemoveEventTitleStrTwo: 'RemoveEventTitleStrTwo' }),
+      AddEventTitleStrOne: 'ADD_EVENT_TITLE_STRING_ONE',
+      RemoveEventTitleStrOne: 'REMOVE_EVENT_TITLE_STRING_ONE',
 
-    ...mapMutations({ AddEventTitleStrThree: 'AddEventTitleStrThree', RemoveEventTitleStrThree: 'RemoveEventTitleStrThree' }),
+      AddEventTitleStrTwo: 'ADD_EVENT_TITLE_STRING_TWO',
+      RemoveEventTitleStrTwo: 'REMOVE_EVENT_TITLE_STRING_TWO',
 
-    ...mapMutations({ AddPlace: 'AddPlace', RemovePlace: 'RemovePlace' }),
+      AddEventTitleStrThree: 'ADD_EVENT_TITLE_STRING_THREE',
+      RemoveEventTitleStrThree: 'REMOVE_EVENT_TITLE_STRING_THREE',
 
-    ...mapMutations({ AddEventSeance: 'AddEventSeance', RemoveEventSeance: 'RemoveEventSeance' }),
+      AddPlace: 'ADD_PLACE',
+      RemovePlace: 'REMOVE_PLACE',
 
-    ...mapMutations({ AddStartDate: 'AddStartDate', RemoveStartDate: 'RemoveStartDate' }),
+      AddEventSeance: 'ADD_EVENT_SEANSE',
+      RemoveEventSeance: 'REMOVE_EVENT_SEANSE',
 
-    ...mapMutations({ AddStartTime: 'AddStartTime', RemoveStartTime: 'RemoveStartTime' }),
+      AddStartDate: 'ADD_START_DATE',
+      RemoveStartDate: 'REMOVE_START_DATE',
 
-    ...mapMutations({ AddSector: 'AddSector', RemoveSector: 'RemoveSector' }),
+      AddStartTime: 'ADD_START_TIME',
+      RemoveStartTime: 'REMOVE_START_TIME',
 
-    ...mapMutations({ AddTicketPlace: 'AddTicketPlace', RemoveTicketPlace: 'RemoveTicketPlace' }),
+      AddSector: 'ADD_SECTOR',
+      RemoveSector: 'REMOVE_SECTOR',
 
-    ...mapMutations({ AddSpecialRulesOne: 'AddSpecialRulesOne', RemoveSpecialRulesOne: 'RemoveSpecialRulesOne' }),
+      AddTicketPlace: 'ADD_TICKET_PLACE',
+      RemoveTicketPlace: 'REMOVE_TICKET_PLACE',
 
-    ...mapMutations({ AddSpecialRulesTwo: 'AddSpecialRulesTwo', RemoveSpecialRulesTwo: 'RemoveSpecialRulesTwo' }),
+      AddSpecialRulesOne: 'ADD_SPECIAL_RULES_ONE',
+      RemoveSpecialRulesOne: 'REMOVE_SPECIAL_RULES_ONE',
 
-    ...mapMutations({ AddAgeLimit: 'AddAgeLimit', RemoveAgeLimit: 'RemoveAgeLimit' }),
+      AddSpecialRulesTwo: 'ADD_SPECIAL_RULES_TWO',
+      RemoveSpecialRulesTwo: 'REMOVE_SPECIAL_RULES_TWO',
 
-    ...mapMutations({ AddCaseTicket: 'AddCaseTicket', RemoveCaseTicket: 'RemoveCaseTicket' }),
+      AddAgeLimit: 'ADD_AGE_LIMIT',
+      RemoveAgeLimit: 'REMOVE_AGE_LIMIT',
 
-    ...mapMutations({ AddСaseInvitation: 'AddСaseInvitation', RemoveСaseInvitation: 'RemoveСaseInvitation' }),
+      AddCaseTicket: 'ADD_CASE_TICKET',
+      RemoveCaseTicket: 'REMOVE_CASE_TICKET',
 
-    ...mapMutations({ AddTicketTitle: 'AddTicketTitle', RemoveTicketTitle: 'RemoveTicketTitle' }),
+      AddСaseInvitation: 'ADD_CASE_INVITATION',
+      RemoveСaseInvitation: 'REMOVE_CASE_INVITATION',
 
-    ...mapMutations({ AddTicketSale: 'AddTicketSale', RemoveTicketSale: 'RemoveTicketSale' }),
+      AddTicketTitle: 'ADD_TICKET_TITLE',
+      RemoveTicketTitle: 'REMOVE_TICKET_TITLE',
 
-    ...mapMutations({ AddCashierName: 'AddCashierName', RemoveCashierName: 'RemoveCashierName' }),
+      AddTicketSale: 'ADD_TICKET_SALE',
+      RemoveTicketSale: 'REMOVE_TICKET_SALE',
 
-    ...mapMutations({ AddCasePushkinCard: 'AddCasePushkinCard', RemoveCasePushkinCard: 'RemoveCasePushkinCard' }),
+      AddCashierName: 'ADD_CASHIER_NAME',
+      RemoveCashierName: 'REMOVE_CASHIER_NAME',
 
-    ...mapMutations({ AddFieldBarcode: 'AddFieldBarcode', RemoveFieldBarcode: 'RemoveFieldBarcode' }),
+      AddCasePushkinCard: 'ADD_CASE_PUSHKIN_CARD',
+      RemoveCasePushkinCard: 'REMOVE_CASE_PUSHKIN_CARD',
 
-    /*
+      AddFieldBarcode: 'ADD_FIELD_BARCODE',
+      RemoveFieldBarcode: 'REMOVE_FIELD_BARCODE',
+
+      /*
      * Заполнение массивов корешка
      */
 
-    ...mapMutations({ AddPromoterCompR: 'AddPromoterCompR', RemovePromoterCompR: 'RemovePromoterCompR' }),
+      AddPromoterCompR: 'ADD_PROMOTER_COMP_ROOTLET',
+      RemovePromoterCompR: 'REMOVE_PROMOTER_COMP_ROOTLET',
 
-    ...mapMutations({ AddPromoterInnR: 'AddPromoterInnR', RemovePromoterInnR: 'RemovePromoterInnR' }),
+      AddPromoterInnR: 'ADD_PROMOTER_INN_ROOTLET',
+      RemovePromoterInnR: 'REMOVE_PROMOTER_INN_ROOTLET',
 
-    ...mapMutations({ AddPromoterAddressR: 'AddPromoterAddressR', RemovePromoterAddressR: 'RemovePromoterAddressR' }),
+      AddPromoterAddressR: 'ADD_PROMOTER_ADDRESS_ROOTLET',
+      RemovePromoterAddressR: 'REMOVE_PROMOTER_ADDRESS_ROOTLET',
 
-    ...mapMutations({ AddEventTitleStrOneR: 'AddEventTitleStrOneR', RemoveEventTitleStrOneR: 'RemoveEventTitleStrOneR' }),
+      AddEventTitleStrOneR: 'ADD_EVENT_TITLE_STRING_ONE_ROOTLET',
+      RemoveEventTitleStrOneR: 'REMOVE_EVENT_TITLE_STRING_ONE_ROOTLET',
 
-    ...mapMutations({ AddEventTitleStrTwoR: 'AddEventTitleStrTwoR', RemoveEventTitleStrTwoR: 'RemoveEventTitleStrTwoR' }),
+      AddEventTitleStrTwoR: 'ADD_EVENT_TITLE_STRING_TWO_ROOTLET',
+      RemoveEventTitleStrTwoR: 'REMOVE_EVENT_TITLE_STRING_TWO_ROOTLET',
 
-    ...mapMutations({ AddEventTitleStrThreeR: 'AddEventTitleStrThreeR', RemoveEventTitleStrThreeR: 'RemoveEventTitleStrThreeR' }),
+      AddEventTitleStrThreeR: 'ADD_EVENT_TITLE_STRING_THREE_ROOTLET',
+      RemoveEventTitleStrThreeR: 'REMOVE_EVENT_TITLE_STRING_THREE_ROOTLET',
 
-    ...mapMutations({ AddPlaceR: 'AddPlaceR', RemovePlaceR: 'RemovePlaceR' }),
+      AddPlaceR: 'ADD_PLACE_ROOTLET',
+      RemovePlaceR: 'REMOVE_PLACE_ROOTLET',
 
-    ...mapMutations({ AddEventSeanceR: 'AddEventSeanceR', RemoveEventSeanceR: 'RemoveEventSeanceR' }),
+      AddEventSeanceR: 'ADD_EVENT_SEANSE_ROOTLET',
+      RemoveEventSeanceR: 'REMOVE_EVENT_SEANSE_ROOTLET',
 
-    ...mapMutations({ AddStartDateR: 'AddStartDateR', RemoveStartDateR: 'RemoveStartDateR' }),
+      AddStartDateR: 'ADD_START_DATE_ROOTLET',
+      RemoveStartDateR: 'REMOVE_START_DATE_ROOTLET',
 
-    ...mapMutations({ AddStartTimeR: 'AddStartTimeR', RemoveStartTimeR: 'RemoveStartTimeR' }),
+      AddStartTimeR: 'ADD_START_TIME_ROOTLET',
+      RemoveStartTimeR: 'REMOVE_START_TIME_ROOTLET',
 
-    ...mapMutations({ AddSectorR: 'AddSectorR', RemoveSectorR: 'RemoveSectorR' }),
+      AddSectorR: 'ADD_SECTOR_ROOTLET',
+      RemoveSectorR: 'REMOVE_SECTOR_ROOTLET',
 
-    ...mapMutations({ AddTicketPlaceR: 'AddTicketPlaceR', RemoveTicketPlaceR: 'RemoveTicketPlaceR' }),
+      AddTicketPlaceR: 'ADD_TICKET_PLACE_ROOTLET',
+      RemoveTicketPlaceR: 'REMOVE_TICKET_PLACE_ROOTLET',
 
-    ...mapMutations({ AddSpecialRulesOneR: 'AddSpecialRulesOneR', RemoveSpecialRulesOneR: 'RemoveSpecialRulesOneR' }),
+      AddSpecialRulesOneR: 'ADD_SPECIAL_RULES_ONE_ROOTLET',
+      RemoveSpecialRulesOneR: 'REMOVE_SPECIAL_RULES_ONE_ROOTLET',
 
-    ...mapMutations({ AddSpecialRulesTwoR: 'AddSpecialRulesTwoR', RemoveSpecialRulesTwoR: 'RemoveSpecialRulesTwoR' }),
+      AddSpecialRulesTwoR: 'ADD_SPECIAL_RULES_TWO_ROOTLET',
+      RemoveSpecialRulesTwoR: 'REMOVE_SPECIAL_RULES_TWO_ROOTLET',
 
-    ...mapMutations({ AddAgeLimitR: 'AddAgeLimitR', RemoveAgeLimitR: 'RemoveAgeLimitR' }),
+      AddAgeLimitR: 'ADD_AGE_LIMIT_ROOTLET',
+      RemoveAgeLimitR: 'REMOVE_AGE_LIMIT_ROOTLET',
 
-    ...mapMutations({ AddCaseTicketR: 'AddCaseTicketR', RemoveCaseTicketR: 'RemoveCaseTicketR' }),
+      AddCaseTicketR: 'ADD_CASE_TICKET_ROOTLET',
+      RemoveCaseTicketR: 'REMOVE_CASE_TICKET_ROOTLET',
 
-    ...mapMutations({ AddСaseInvitationR: 'AddСaseInvitationR', RemoveСaseInvitationR: 'RemoveСaseInvitationR' }),
+      AddСaseInvitationR: 'ADD_CASE_INVITATION_ROOTLET',
+      RemoveСaseInvitationR: 'REMOVE_CASE_INVITATION_ROOTLET',
 
-    ...mapMutations({ AddTicketTitleR: 'AddTicketTitleR', RemoveTicketTitleR: 'RemoveTicketTitleR' }),
+      AddTicketTitleR: 'ADD_TICKET_TITLE_ROOTLET',
+      RemoveTicketTitleR: 'REMOVE_TICKET_TITLE_ROOTLET',
 
-    ...mapMutations({ AddTicketSaleR: 'AddTicketSaleR', RemoveTicketSaleR: 'RemoveTicketSaleR' }),
+      AddTicketSaleR: 'ADD_TICKET_SALE_ROOTLET',
+      RemoveTicketSaleR: 'REMOVE_TICKET_SALE_ROOTLET',
 
-    ...mapMutations({ AddCashierNameR: 'AddCashierNameR', RemoveCashierNameR: 'RemoveCashierNameR' }),
+      AddCashierNameR: 'ADD_CASHIER_NAME_ROOTLET',
+      RemoveCashierNameR: 'REMOVE_CASHIER_NAME_ROOTLET',
 
-    ...mapMutations({ AddCasePushkinCardR: 'AddCasePushkinCardR', RemoveCasePushkinCardR: 'RemoveCasePushkinCardR' }),
+      AddCasePushkinCardR: 'ADD_CASE_PUSHKIN_CARD_ROOTLET',
+      RemoveCasePushkinCardR: 'REMOVE_CASE_PUSHKIN_CARD_ROOTLET',
 
-    ...mapMutations({ AddFieldBarcodeR: 'AddFieldBarcodeR', RemoveFieldBarcodeR: 'RemoveFieldBarcodeR' })
+      AddFieldBarcodeR: 'ADD_FIELD_BARCODE_ROOTLET',
+      RemoveFieldBarcodeR: 'REMOVE_FIELD_BARCODE_ROOTLET'
+    })
   }
 }
 </script>
