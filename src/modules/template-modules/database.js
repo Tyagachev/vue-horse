@@ -290,7 +290,7 @@ export default {
         utfTag: 'Приглашение'
       },
       ticket_title: {
-        name: 'Билет:9674280201',
+        name: 'Билет: 9674280201',
         id: 16,
         originalY: '0',
         originalX: '0',
@@ -305,8 +305,8 @@ export default {
         rcTag: '<RC',
         fontWeight: '<F:norm>',
         weightDatamax: 'P008',
-        tag: 'Билет:{ticket_title}',
-        utfTag: 'Билет:{ticket_title}'
+        tag: 'Билет: {ticket_title}',
+        utfTag: 'Билет: {ticket_title}'
       },
       ticket_sale: {
         name: '22.10.2022 17:18',
@@ -727,8 +727,8 @@ export default {
         rcTag: '<RC',
         fontWeight: '<F:norm>',
         weightDatamax: 'P008',
-        tag: 'Билет:{ticket_title}',
-        utfTag: 'Билет:{ticket_title}'
+        tag: 'Билет: {ticket_title}',
+        utfTag: 'Билет: {ticket_title}'
       },
       ticket_sale: {
         name: '22.10.2022 17:18',
