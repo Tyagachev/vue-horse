@@ -11,7 +11,9 @@
     </ul>
 
     <div class="template_list" @click="RemoveIndexRootlet(idx)" v-for="(el, idx) in $store.state.arrays.templateArrayRootlet" :key="idx">{{el.tag2}}{{el.barcodeTag}}{{el.staticDatamax}}{{el.font}}{{el.originalX}}{{el.originalY}}{{el.weightDatamax}}{{el.weightDatamax}}{{el.tag}}</div>
+    <br>
     <hr>
+    <br>
     <div class="template_list" @click="RemoveIndexTicket(idx)" v-for="(el, idx) in $store.state.arrays.templateArray" :key="idx">{{el.tag2}}{{el.barcodeTag}}{{el.staticDatamax}}{{el.font}}{{el.originalX}}{{el.originalY}}{{el.weightDatamax}}{{el.weightDatamax}}{{el.tag}}</div>
 
     <ul class="build_list-padding">
