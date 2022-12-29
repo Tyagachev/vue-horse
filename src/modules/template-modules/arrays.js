@@ -57,7 +57,7 @@ export default {
   },
   mutations: {
     /*
-    * Удаление елемента из массива
+    * Удаление элемента из массива
     */
     REMOVE_INDEX_TICKET: (state, idx) => {
       state.templateArray.splice(idx, 1)
