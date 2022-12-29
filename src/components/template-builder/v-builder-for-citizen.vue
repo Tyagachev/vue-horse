@@ -38,8 +38,10 @@ export default {
   },
   computed: {},
   methods: {
-    ...mapMutations({ RemoveIndexTicket: 'RemoveIndexTicket' }),
-    ...mapMutations({ RemoveIndexRootlet: 'RemoveIndexRootlet' })
+    ...mapMutations({
+      RemoveIndexTicket: 'REMOVE_INDEX_TICKET',
+      RemoveIndexRootlet: 'REMOVE_INDEX_ROOTLET'
+    })
   }
 }
 </script>
