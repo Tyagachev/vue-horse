@@ -491,7 +491,8 @@ h3 {
 }
 .build_list-custom {
   list-style: none;
-  padding: 5px;
+  padding: 0px;
+  cursor: default;
 }
 .build_list-custom:hover {
   color: rgb(92, 92, 248);
@@ -524,10 +525,7 @@ h3 {
 .build_list {
   list-style: none;
 }
-.build_list-custom {
-  padding: 0;
-  cursor: default;
-}
+
 .build_list-padding {
   margin: 10px 0 20px 0;
 }
