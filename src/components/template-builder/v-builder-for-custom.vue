@@ -12,19 +12,18 @@
       <p>{{textRotateСlockwise}}</p>
     <ul class="build_list-padding">
       <li class="build_list-custom" @click="RemoveIndexRootlet(idx)" v-for="(el, idx) in $store.state.arrays.templateArrayRootlet" :key="idx">
-        <div>{{el.ttf}}</div>
-        <div>{{el.fontSize}}</div>
-        <div>{{el.fontWeight}}</div>
-        <div>{{el.tag2}}{{el.rcTag}}{{el.originalForCustomY}}<span>,</span>{{el.originalForCustomX}}<span>></span>{{el.staticCustom}}{{el.utfTag}}</div>
+        <div>{{el.tag2}}{{el.rcTag}}{{el.originalForCustomY}}<span>,</span>{{el.originalForCustomX}}<span>></span></div>
+        <div>{{el.staticCustom}}{{el.fontSize}}{{el.fontWeight}}{{el.utfTag}}</div>
+        <br>
       </li>
     </ul>
     <hr>
     <p>{{textHorizontal}}</p>
     <ul class="build_list-padding">
       <li class="build_list-custom" @click="RemoveIndexTicket(idx)" v-for="(el, idx) in $store.state.arrays.templateArray" :key="idx">
-        <div>{{el.fontSize}}</div>
-        <div>{{el.fontWeight}}</div>
-        <div>{{el.tag2}}{{el.rcTag}}{{el.originalForCustomY}}<span>,</span>{{el.originalForCustomX}}<span>></span>{{el.staticCustom}}{{el.utfTag}}</div>
+        <div>{{el.tag2}}{{el.rcTag}}{{el.originalForCustomY}}<span>,</span>{{el.originalForCustomX}}<span>></span></div>
+        <div>{{el.staticCustom}}{{el.fontSize}}{{el.fontWeight}}{{el.utfTag}}</div>
+        <br>
       </li>
     </ul>
     <p></p>
@@ -55,8 +54,11 @@ export default {
   },
   computed: {},
   methods: {
-    ...mapMutations({ RemoveIndexTicket: 'RemoveIndexTicket' }),
-    ...mapMutations({ RemoveIndexRootlet: 'RemoveIndexRootlet' })
+    ...mapMutations({
+      RemoveIndexTicket: 'REMOVE_INDEX_TICKET',
+      RemoveIndexRootlet: 'REMOVE_INDEX_ROOTLET'
+    })
+
   }
 }
 </script>

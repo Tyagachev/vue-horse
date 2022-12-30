@@ -5,7 +5,7 @@ import vMmToDpi from '@/components/converter/v-mm-to-dpi'
 import vDpiToMm from '@/components/converter/v-dpi-to-mm.vue'
 import vPxToDpi from '@/components/converter/v-px-to-dpi.vue'
 import vTemplate from '@/components/template-builder/v-template.vue'
-import vTemplatePdf from '@/components/template-builder-pdf/v-template-pdf.vue'
+import vTemplatePdf from '@/components/template-builder/v-template-pdf.vue'
 
 const routes = [
   {
@@ -14,18 +14,18 @@ const routes = [
     component: vHome
   },
   {
-    path: '/mmtodpi',
-    name: 'mmtodpi',
+    path: '/mm-to-dpi',
+    name: 'mm-to-dpi',
     component: vMmToDpi
   },
   {
-    path: '/dpitomm',
-    name: 'dpitomm',
+    path: '/dpi-to-mm',
+    name: 'dpi-to-mm',
     component: vDpiToMm
   },
   {
-    path: '/pxtodpi',
-    name: 'pxtodpi',
+    path: '/px-to-dpi',
+    name: 'px-to-dpi',
     component: vPxToDpi
   },
   {

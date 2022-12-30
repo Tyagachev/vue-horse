@@ -1,4 +1,7 @@
-.pxtodpi_title {
+hr {
+  border-bottom-style: none;
+}
+  .pxtodpi_title {
     text-align: center;
   }
   .pxtodpi_link {
@@ -81,7 +84,7 @@ button:hover {
 background-color:#769184;
 }
 
-.home_title_wrp{
+  .home_title_wrp{
     justify-content: center;
     display: flex;
     align-items: center;
@@ -122,13 +125,13 @@ background-color:#769184;
     height: 100%;
   }
 
-.black-info {
+  .black-info {
   margin: 0px;
 }
-.template_list {
-  cursor: pointer;
+  .template_list {
+  cursor: default;
 }
-.template_list:hover {
+  .template_list:hover {
   color: rgb(92, 92, 248);
 }
 .cart_pin-div {
@@ -213,6 +216,7 @@ background-color:#769184;
   font-size: 30px;
   border-radius: 50%;
   border: none;
+  border: 0.5px solid lightgrey;
 }
 .addbutton:hover {
   transition: 0.5s;
@@ -391,7 +395,7 @@ background-color:#769184;
   position: relative;
   margin: 0;
   padding: 0;
-  width: 150px;
+  width: 200px;
   transform: translateY(-15px);
 }
 .ticket_text-rootlet {
@@ -438,83 +442,80 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  }
 
-.v-build-components-custom {
+  .v-build-components-custom {
   display: none;
-}
+  }
 
 .template-datamax {
-    border: 1px solid #ffffff;
-    width: 500px;
-    padding: 10px 0 10px 10px;
-    box-shadow: -1px 0px 8px 0px rgb(34 60 80 / 20%);
-    background-color: white;
-    margin: 10px;
-  }
-  .template_text{
-    margin: 0;
-  }
-  .build_list {
-    list-style: none;
-  }
-  .build_list-padding {
-    margin: 0 0 20px 0;
-  }
-  .build_w-text {
-    color: red;
-    margin: 0;
-    padding: 0;
-  }
-  .build_n-text {
-    margin: 0;
-    padding: 0;
-  }
-  .btn_alltwo {
-    height: 36px;
-    margin: 0 0 0 5px;
-  }
-
-  .template-custom {
-    border: 1px solid #ffffff;
-    min-width: 500px;
-    padding: 10px 0 10px 10px;
-    box-shadow: -1px 0px 8px 0px rgb(34 60 80 / 20%);
-    background-color: white;
-    margin: 0px;
-  }
-  .template_text{
-    margin: 0;
-  }
-  .build_list-custom {
-    list-style: none;
-    padding: 5px;
-  }
-  .build_list-custom:hover {
-    color: rgb(92, 92, 248);
-  }
-  .build_list-padding {
-    margin: 10px 0 20px 0;
-  }
-  .build_w {
-    margin: 0;
-    padding: 0;
-  }
-  .build_n-text {
-    margin: 0;
-    padding: 0;
-  }
-  .btn_alltwo {
-    height: 36px;
-    margin: 0 0 0 5px;
-  }
-  hr {
-    border-bottom-style: none;
-  }
-
-  .template-citizen {
   border: 1px solid #ffffff;
-  width: 500px;
+  width: 550px;
+  padding: 10px 0 10px 10px;
+  box-shadow: -1px 0px 8px 0px rgb(34 60 80 / 20%);
+  background-color: white;
+  margin: 10px;
+}
+.template_text{
+   margin: 0;
+}
+.build_list {
+  list-style: none;
+}
+.build_list-padding {
+  margin: 0 0 20px 0;
+}
+.build_w-text {
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+.build_n-text {
+  margin: 0;
+  padding: 0;
+}
+.btn_alltwo {
+  height: 36px;
+  margin: 0 0 0 5px;
+}
+
+.template-custom {
+  border: 1px solid #ffffff;
+  min-width: 550px;
+  padding: 10px 0 10px 10px;
+  box-shadow: -1px 0px 8px 0px rgb(34 60 80 / 20%);
+  background-color: white;
+  margin: 0px;
+}
+.template_text{
+  margin: 0;
+}
+.build_list-custom {
+  list-style: none;
+  padding: 0px;
+  cursor: default;
+}
+.build_list-custom:hover {
+  color: rgb(92, 92, 248);
+}
+.build_list-padding {
+  margin: 10px 0 20px 0;
+}
+.build_w {
+  margin: 0;
+  padding: 0;
+}
+.build_n-text {
+  margin: 0;
+  padding: 0;
+}
+.btn_alltwo {
+  height: 36px;
+  margin: 0 0 0 5px;
+}
+.template-citizen {
+  border: 1px solid #ffffff;
+  width: 550px;
   padding: 10px 0 10px 10px;
   box-shadow: -1px 0px 8px 0px rgb(34 60 80 / 20%);
   background-color: white;
@@ -525,9 +526,10 @@ h3 {
 .build_list {
   list-style: none;
 }
+
 .build_list-padding {
-    margin: 10px 0 20px 0;
-  }
+  margin: 10px 0 20px 0;
+}
 .build_w-text {
   color: red;
   margin: 0;

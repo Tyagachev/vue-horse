@@ -11,7 +11,9 @@
     </ul>
 
     <div class="template_list" @click="RemoveIndexRootlet(idx)" v-for="(el, idx) in $store.state.arrays.templateArrayRootlet" :key="idx">{{el.tag2}}{{el.barcodeTag}}{{el.static}}{{el.originalX}}{{el.originalY}}{{el.tag}}</div>
+    <br>
     <hr>
+    <br>
     <div class="template_list" @click="RemoveIndexTicket(idx)" v-for="(el, idx) in $store.state.arrays.templateArray" :key="idx">{{el.tag2}}{{el.barcodeTag}}{{el.static}}{{el.originalX}}{{el.originalY}}{{el.tag}}</div>
 
     <ul class="build_list-padding">
@@ -38,8 +40,10 @@ export default {
   },
   computed: {},
   methods: {
-    ...mapMutations({ RemoveIndexTicket: 'RemoveIndexTicket' }),
-    ...mapMutations({ RemoveIndexRootlet: 'RemoveIndexRootlet' })
+    ...mapMutations({
+      RemoveIndexTicket: 'REMOVE_INDEX_TICKET',
+      RemoveIndexRootlet: 'REMOVE_INDEX_ROOTLET'
+    })
   }
 }
 </script>

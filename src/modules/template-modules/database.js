@@ -193,7 +193,7 @@ export default {
         utfTag: '{ticket_site_place}'
       },
       ticket_row: {
-        name: 'Ряд: 1',
+        name: 'Ряд: 10',
         id: 11,
         originalY: '0',
         originalX: '0',
@@ -212,7 +212,7 @@ export default {
         utfTag: 'Ряд: {row}'
       },
       ticket_place: {
-        name: 'Место: 1',
+        name: 'Место: 15',
         id: 12,
         originalY: '0',
         originalX: '0',
@@ -250,7 +250,7 @@ export default {
         utfTag: '{age_limit}'
       },
       case_ticket: {
-        name: 'Стоимость',
+        name: 'Стоимость услуги: 100руб.',
         id: 14,
         originalY: '0',
         originalX: '0',
@@ -290,7 +290,7 @@ export default {
         utfTag: 'Приглашение'
       },
       ticket_title: {
-        name: 'Билет:9674280201',
+        name: 'Билет: 9674280201',
         id: 16,
         originalY: '0',
         originalX: '0',
@@ -305,8 +305,8 @@ export default {
         rcTag: '<RC',
         fontWeight: '<F:norm>',
         weightDatamax: 'P008',
-        tag: 'Билет:{ticket_title}',
-        utfTag: 'Билет:{ticket_title}'
+        tag: 'Билет: {ticket_title}',
+        utfTag: 'Билет: {ticket_title}'
       },
       ticket_sale: {
         name: '22.10.2022 17:18',
@@ -383,7 +383,7 @@ export default {
         barcodeTag: '{field_barcode_code128}'
       },
       event_seance_start_date: {
-        name: 'Дата',
+        name: '31.01.2022',
         id: 21,
         originalY: '0',
         originalX: '0',
@@ -402,7 +402,7 @@ export default {
         utfTag: '{event_seance_start_date}'
       },
       event_seance_start_time: {
-        name: 'Время',
+        name: '19:00',
         id: 22,
         originalY: '0',
         originalX: '0',
@@ -615,7 +615,7 @@ export default {
         utfTag: '{ticket_site_place}'
       },
       ticket_row: {
-        name: 'Ряд: 1',
+        name: 'р.10',
         id: 11,
         originalY: '0',
         originalX: '0',
@@ -634,7 +634,7 @@ export default {
         utfTag: 'р.{row}'
       },
       ticket_place: {
-        name: 'Место: 1',
+        name: 'м.20',
         id: 12,
         originalY: '0',
         originalX: '0',
@@ -727,8 +727,8 @@ export default {
         rcTag: '<RC',
         fontWeight: '<F:norm>',
         weightDatamax: 'P008',
-        tag: 'Билет:{ticket_title}',
-        utfTag: 'Билет:{ticket_title}'
+        tag: 'Билет: {ticket_title}',
+        utfTag: 'Билет: {ticket_title}'
       },
       ticket_sale: {
         name: '22.10.2022 17:18',
@@ -805,7 +805,7 @@ export default {
         barcodeTag: '{field_barcode_code128}'
       },
       event_seance_start_date: {
-        name: 'Дата',
+        name: '31.01.2022',
         id: 21,
         originalY: '0',
         originalX: '0',
@@ -824,7 +824,7 @@ export default {
         utfTag: '<F:enc:utf-8>{event_seance_start_date}<F:enc:ascii>'
       },
       event_seance_start_time: {
-        name: 'Время',
+        name: '19:00',
         id: 22,
         originalY: '0',
         originalX: '0',

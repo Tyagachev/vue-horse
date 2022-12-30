@@ -57,347 +57,347 @@ export default {
   },
   mutations: {
     /*
-    * Удаление елемента из массива
+    * Удаление элемента из массива
     */
-    RemoveIndexTicket (state, idx) {
+    REMOVE_INDEX_TICKET: (state, idx) => {
       state.templateArray.splice(idx, 1)
     },
-    RemoveIndexRootlet (state, idx) {
+    REMOVE_INDEX_ROOTLET: (state, idx) => {
       state.templateArrayRootlet.splice(idx, 1)
     },
     /*
     * Заполнение массивов билета
     */
-    AddPromoterComp (state) {
+    ADD_PROMOTER_COMP: (state) => {
       state.promoterCompArray.push(state.dataBase.db.promoter_company)
       state.templateArray.push(state.dataBase.db.promoter_company)
     },
-    RemovePromoterComp (state) {
+    REMOVE_PROMOTER_COMP: (state) => {
       state.promoterCompArray.length = 0
     },
 
-    AddPromoterInn (state) {
+    ADD_PROMOTER_INN: (state) => {
       state.promoterInnArray.push(state.dataBase.db.promoter_inn)
       state.templateArray.push(state.dataBase.db.promoter_inn)
     },
-    RemovePromoterInn (state) {
+    REMOVE_PROMOTER_INN: (state) => {
       state.promoterInnArray.length = 0
     },
 
-    AddPromoterAddress (state) {
+    ADD_PROMOTER_ADDRESS: (state) => {
       state.promoterAddressArray.push(state.dataBase.db.promoter_address)
       state.templateArray.push(state.dataBase.db.promoter_address)
     },
-    RemovePromoterAddress (state) {
+    REMOVE_PROMOTER_ADDRESS: (state) => {
       state.promoterAddressArray.length = 0
     },
 
-    AddEventTitleStrOne (state) {
+    ADD_EVENT_TITLE_STRING_ONE: (state) => {
       state.eventTitleStrOneArray.push(state.dataBase.db.event_title_str1)
       state.templateArray.push(state.dataBase.db.event_title_str1)
     },
-    RemoveEventTitleStrOne (state) {
+    REMOVE_EVENT_TITLE_STRING_ONE: (state) => {
       state.eventTitleStrOneArray.length = 0
     },
 
-    AddEventTitleStrTwo (state) {
+    ADD_EVENT_TITLE_STRING_TWO: (state) => {
       state.eventTitleStrTwoArray.push(state.dataBase.db.event_title_str2)
       state.templateArray.push(state.dataBase.db.event_title_str2)
     },
-    RemoveEventTitleStrTwo (state) {
+    REMOVE_EVENT_TITLE_STRING_TWO: (state) => {
       state.eventTitleStrTwoArray.length = 0
     },
 
-    AddEventTitleStrThree (state) {
+    ADD_EVENT_TITLE_STRING_THREE: (state) => {
       state.eventTitleStrThreeArray.push(state.dataBase.db.event_title_str3)
       state.templateArray.push(state.dataBase.db.event_title_str3)
     },
-    RemoveEventTitleStrThree (state) {
+    REMOVE_EVENT_TITLE_STRING_THREE: (state) => {
       state.eventTitleStrThreeArray.length = 0
     },
 
-    AddPlace (state) {
+    ADD_PLACE: (state) => {
       state.placeArray.push(state.dataBase.db.event_place_title)
       state.templateArray.push(state.dataBase.db.event_place_title)
     },
-    RemovePlace (state) {
+    REMOVE_PLACE: (state) => {
       state.placeArray.length = 0
     },
 
-    AddEventSeance (state) {
+    ADD_EVENT_SEANSE: (state) => {
       state.eventSeanceArray.push(state.dataBase.db.event_seance)
       state.templateArray.push(state.dataBase.db.event_seance)
     },
-    RemoveEventSeance (state) {
+    REMOVE_EVENT_SEANSE: (state) => {
       state.eventSeanceArray.length = 0
     },
 
-    AddStartDate (state) {
+    ADD_START_DATE: (state) => {
       state.seanceStartDateArray.push(state.dataBase.db.event_seance_start_date)
       state.templateArray.push(state.dataBase.db.event_seance_start_date)
     },
-    RemoveStartDate (state) {
+    REMOVE_START_DATE: (state) => {
       state.seanceStartDateArray.length = 0
     },
 
-    AddStartTime (state) {
+    ADD_START_TIME: (state) => {
       state.seanceStartTimeArray.push(state.dataBase.db.event_seance_start_time)
       state.templateArray.push(state.dataBase.db.event_seance_start_time)
     },
-    RemoveStartTime (state) {
+    REMOVE_START_TIME: (state) => {
       state.seanceStartTimeArray.length = 0
     },
 
-    AddSector (state) {
+    ADD_SECTOR: (state) => {
       state.sectorArray.push(state.dataBase.db.sector)
       state.templateArray.push(state.dataBase.db.sector)
     },
-    RemoveSector (state) {
+    REMOVE_SECTOR: (state) => {
       state.sectorArray.length = 0
     },
 
-    AddTicketPlace (state) {
+    ADD_TICKET_PLACE: (state) => {
       state.ticketPlaceArray.push(state.dataBase.db.ticket_site_place)
       state.templateArray.push(state.dataBase.db.ticket_site_place)
     },
-    RemoveTicketPlace (state) {
+    REMOVE_TICKET_PLACE: (state) => {
       state.ticketPlaceArray.length = 0
     },
 
-    AddSpecialRulesOne (state) {
+    ADD_SPECIAL_RULES_ONE: (state) => {
       state.specialRulesOneArray.push(state.dataBase.db.ticket_row)
       state.templateArray.push(state.dataBase.db.ticket_row)
     },
-    RemoveSpecialRulesOne (state) {
+    REMOVE_SPECIAL_RULES_ONE: (state) => {
       state.specialRulesOneArray.length = 0
     },
 
-    AddSpecialRulesTwo (state) {
+    ADD_SPECIAL_RULES_TWO: (state) => {
       state.specialRulesTwoArray.push(state.dataBase.db.ticket_place)
       state.templateArray.push(state.dataBase.db.ticket_place)
     },
-    RemoveSpecialRulesTwo (state) {
+    REMOVE_SPECIAL_RULES_TWO: (state) => {
       state.specialRulesTwoArray.length = 0
     },
 
-    AddAgeLimit (state) {
+    ADD_AGE_LIMIT: (state) => {
       state.ageLimitArray.push(state.dataBase.db.age_limit)
       state.templateArray.push(state.dataBase.db.age_limit)
     },
-    RemoveAgeLimit (state) {
+    REMOVE_AGE_LIMIT: (state) => {
       state.ageLimitArray.length = 0
     },
 
-    AddCaseTicket (state) {
+    ADD_CASE_TICKET: (state) => {
       state.caseTicketArray.push(state.dataBase.db.case_ticket)
       state.templateArray.push(state.dataBase.db.case_ticket)
     },
-    RemoveCaseTicket (state) {
+    REMOVE_CASE_TICKET: (state) => {
       state.caseTicketArray.length = 0
     },
 
-    AddСaseInvitation (state) {
+    ADD_CASE_INVITATION: (state) => {
       state.invationTicketArray.push(state.dataBase.db.case_invitation)
       state.templateArray.push(state.dataBase.db.case_invitation)
     },
-    RemoveСaseInvitation (state) {
+    REMOVE_CASE_INVITATION: (state) => {
       state.invationTicketArray.length = 0
     },
 
-    AddTicketTitle (state) {
+    ADD_TICKET_TITLE: (state) => {
       state.ticketTitleArray.push(state.dataBase.db.ticket_title)
       state.templateArray.push(state.dataBase.db.ticket_title)
     },
-    RemoveTicketTitle (state) {
+    REMOVE_TICKET_TITLE: (state) => {
       state.ticketTitleArray.length = 0
     },
 
-    AddTicketSale (state) {
+    ADD_TICKET_SALE: (state) => {
       state.ticketSaleArray.push(state.dataBase.db.ticket_sale)
       state.templateArray.push(state.dataBase.db.ticket_sale)
     },
-    RemoveTicketSale (state) {
+    REMOVE_TICKET_SALE: (state) => {
       state.ticketSaleArray.length = 0
     },
 
-    AddCashierName (state) {
+    ADD_CASHIER_NAME: (state) => {
       state.cashierTicketArray.push(state.dataBase.db.cashier_name)
       state.templateArray.push(state.dataBase.db.cashier_name)
     },
-    RemoveCashierName (state) {
+    REMOVE_CASHIER_NAME: (state) => {
       state.cashierTicketArray.length = 0
     },
 
-    AddCasePushkinCard (state) {
+    ADD_CASE_PUSHKIN_CARD: (state) => {
       state.pushkinCardTicketArray.push(state.dataBase.db.case_pushkin_card)
       state.templateArray.push(state.dataBase.db.case_pushkin_card)
     },
-    RemoveCasePushkinCard (state) {
+    REMOVE_CASE_PUSHKIN_CARD: (state) => {
       state.pushkinCardTicketArray.length = 0
     },
 
-    AddFieldBarcode (state) {
+    ADD_FIELD_BARCODE: (state) => {
       state.fieldBarcodeTicketArray.push(state.dataBase.db.field_barcode)
       state.templateArray.push(state.dataBase.db.field_barcode)
     },
-    RemoveFieldBarcode (state) {
+    REMOVE_FIELD_BARCODE: (state) => {
       state.fieldBarcodeTicketArray.length = 0
     },
     /*
     * Заполнение массивов корешка
     */
-    AddPromoterCompR (state) {
+    ADD_PROMOTER_COMP_ROOTLET: (state) => {
       state.promoterCompArrayR.push(state.dataBase.dbRootlet.promoter_company)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.promoter_company)
     },
-    RemovePromoterCompR (state) {
+    REMOVE_PROMOTER_COMP_ROOTLET: (state) => {
       state.promoterCompArrayR.length = 0
     },
-    AddPromoterInnR (state) {
+    ADD_PROMOTER_INN_ROOTLET: (state) => {
       state.promoterInnArrayR.push(state.dataBase.dbRootlet.promoter_inn)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.promoter_inn)
     },
-    RemovePromoterInnR (state) {
+    REMOVE_PROMOTER_INN_ROOTLET: (state) => {
       state.promoterInnArrayR.length = 0
     },
-    AddPromoterAddressR (state) {
+    ADD_PROMOTER_ADDRESS_ROOTLET: (state) => {
       state.promoterAddressArrayR.push(state.dataBase.dbRootlet.promoter_address)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.promoter_address)
     },
-    RemovePromoterAddressR (state) {
+    REMOVE_PROMOTER_ADDRESS_ROOTLET: (state) => {
       state.promoterAddressArrayR.length = 0
     },
-    AddEventTitleStrOneR (state) {
+    ADD_EVENT_TITLE_STRING_ONE_ROOTLET: (state) => {
       state.eventTitleStrOneArrayR.push(state.dataBase.dbRootlet.event_title_str1)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.event_title_str1)
     },
-    RemoveEventTitleStrOneR (state) {
+    REMOVE_EVENT_TITLE_STRING_ONE_ROOTLET: (state) => {
       state.eventTitleStrOneArrayR.length = 0
     },
-    AddEventTitleStrTwoR (state) {
+    ADD_EVENT_TITLE_STRING_TWO_ROOTLET: (state) => {
       state.eventTitleStrTwoArrayR.push(state.dataBase.dbRootlet.event_title_str2)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.event_title_str2)
     },
-    RemoveEventTitleStrTwoR (state) {
+    REMOVE_EVENT_TITLE_STRING_TWO_ROOTLET: (state) => {
       state.eventTitleStrTwoArrayR.length = 0
     },
-    AddEventTitleStrThreeR (state) {
+    ADD_EVENT_TITLE_STRING_THREE_ROOTLET: (state) => {
       state.eventTitleStrThreeArrayR.push(state.dataBase.dbRootlet.event_title_str3)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.event_title_str3)
     },
-    RemoveEventTitleStrThreeR (state) {
+    REMOVE_EVENT_TITLE_STRING_THREE_ROOTLET: (state) => {
       state.eventTitleStrThreeArrayR.length = 0
     },
-    AddPlaceR (state) {
+    ADD_PLACE_ROOTLET: (state) => {
       state.placeArrayR.push(state.dataBase.dbRootlet.event_place_title)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.event_place_title)
     },
-    RemovePlaceR (state) {
+    REMOVE_PLACE_ROOTLET: (state) => {
       state.placeArrayR.length = 0
     },
-    AddEventSeanceR (state) {
+    ADD_EVENT_SEANSE_ROOTLET: (state) => {
       state.eventSeanceArrayR.push(state.dataBase.dbRootlet.event_seance)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.event_seance)
     },
-    RemoveEventSeanceR (state) {
+    REMOVE_EVENT_SEANSE_ROOTLET: (state) => {
       state.eventSeanceArrayR.length = 0
     },
-    AddStartDateR (state) {
+    ADD_START_DATE_ROOTLET: (state) => {
       state.seanceStartDateArrayR.push(state.dataBase.dbRootlet.event_seance_start_date)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.event_seance_start_date)
     },
-    RemoveStartDateR (state) {
+    REMOVE_START_DATE_ROOTLET: (state) => {
       state.seanceStartDateArrayR.length = 0
     },
-    AddStartTimeR (state) {
+    ADD_START_TIME_ROOTLET: (state) => {
       state.seanceStartTimeArrayR.push(state.dataBase.dbRootlet.event_seance_start_time)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.event_seance_start_time)
     },
-    RemoveStartTimeR (state) {
+    REMOVE_START_TIME_ROOTLET: (state) => {
       state.seanceStartTimeArrayR.length = 0
     },
-    AddSectorR (state) {
+    ADD_SECTOR_ROOTLET: (state) => {
       state.sectorArrayR.push(state.dataBase.dbRootlet.sector)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.sector)
     },
-    RemoveSectorR (state) {
+    REMOVE_SECTOR_ROOTLET: (state) => {
       state.sectorArrayR.length = 0
     },
-    AddTicketPlaceR (state) {
+    ADD_TICKET_PLACE_ROOTLET: (state) => {
       state.ticketPlaceArrayR.push(state.dataBase.dbRootlet.ticket_site_place)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.ticket_site_place)
     },
-    RemoveTicketPlaceR (state) {
+    REMOVE_TICKET_PLACE_ROOTLET: (state) => {
       state.ticketPlaceArrayR.length = 0
     },
-    AddSpecialRulesOneR (state) {
+    ADD_SPECIAL_RULES_ONE_ROOTLET: (state) => {
       state.specialRulesOneArrayR.push(state.dataBase.dbRootlet.ticket_row)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.ticket_row)
     },
-    RemoveSpecialRulesOneR (state) {
+    REMOVE_SPECIAL_RULES_ONE_ROOTLET: (state) => {
       state.specialRulesOneArrayR.length = 0
     },
-    AddSpecialRulesTwoR (state) {
+    ADD_SPECIAL_RULES_TWO_ROOTLET: (state) => {
       state.specialRulesTwoArrayR.push(state.dataBase.dbRootlet.ticket_place)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.ticket_place)
     },
-    RemoveSpecialRulesTwoR (state) {
+    REMOVE_SPECIAL_RULES_TWO_ROOTLET: (state) => {
       state.specialRulesTwoArrayR.length = 0
     },
-    AddAgeLimitR (state) {
+    ADD_AGE_LIMIT_ROOTLET: (state) => {
       state.ageLimitArrayR.push(state.dataBase.dbRootlet.age_limit)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.age_limit)
     },
-    RemoveAgeLimitR (state) {
+    REMOVE_AGE_LIMIT_ROOTLET: (state) => {
       state.ageLimitArrayR.length = 0
     },
-    AddCaseTicketR (state) {
+    ADD_CASE_TICKET_ROOTLET: (state) => {
       state.caseTicketArrayR.push(state.dataBase.dbRootlet.case_ticket)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.case_ticket)
     },
-    RemoveCaseTicketR (state) {
+    REMOVE_CASE_TICKET_ROOTLET: (state) => {
       state.caseTicketArrayR.length = 0
     },
-    AddСaseInvitationR (state) {
+    ADD_CASE_INVITATION_ROOTLET: (state) => {
       state.invationTicketArrayR.push(state.dataBase.dbRootlet.case_invitation)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.case_invitation)
     },
-    RemoveСaseInvitationR (state) {
+    REMOVE_CASE_INVITATION_ROOTLET: (state) => {
       state.invationTicketArrayR.length = 0
     },
-    AddTicketTitleR (state) {
+    ADD_TICKET_TITLE_ROOTLET: (state) => {
       state.ticketTitleArrayR.push(state.dataBase.dbRootlet.ticket_title)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.ticket_title)
     },
-    RemoveTicketTitleR (state) {
+    REMOVE_TICKET_TITLE_ROOTLET: (state) => {
       state.ticketTitleArrayR.length = 0
     },
-    AddTicketSaleR (state) {
+    ADD_TICKET_SALE_ROOTLET: (state) => {
       state.ticketSaleArrayR.push(state.dataBase.dbRootlet.ticket_sale)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.ticket_sale)
     },
-    RemoveTicketSaleR (state) {
+    REMOVE_TICKET_SALE_ROOTLET: (state) => {
       state.ticketSaleArrayR.length = 0
     },
-    AddCashierNameR (state) {
+    ADD_CASHIER_NAME_ROOTLET: (state) => {
       state.cashierTicketArrayR.push(state.dataBase.dbRootlet.cashier_name)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.cashier_name)
     },
-    RemoveCashierNameR (state) {
+    REMOVE_CASHIER_NAME_ROOTLET: (state) => {
       state.cashierTicketArrayR.length = 0
     },
-    AddCasePushkinCardR (state) {
+    ADD_CASE_PUSHKIN_CARD_ROOTLET: (state) => {
       state.pushkinCardTicketArrayR.push(state.dataBase.dbRootlet.case_pushkin_card)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.case_pushkin_card)
     },
-    RemoveCasePushkinCardR (state) {
+    REMOVE_CASE_PUSHKIN_CARD_ROOTLET: (state) => {
       state.pushkinCardTicketArrayR.length = 0
     },
-    AddFieldBarcodeR (state) {
+    ADD_FIELD_BARCODE_ROOTLET: (state) => {
       state.fieldBarcodeTicketArrayR.push(state.dataBase.dbRootlet.field_barcode)
       state.templateArrayRootlet.push(state.dataBase.dbRootlet.field_barcode)
     },
-    RemoveFieldBarcodeR (state) {
+    REMOVE_FIELD_BARCODE_ROOTLET: (state) => {
       state.fieldBarcodeTicketArrayR.length = 0
     }
   },
