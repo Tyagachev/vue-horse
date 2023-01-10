@@ -15,7 +15,7 @@
             <button class="router_button"><a class="router_link" href="/dpi-to-mm"></a>Dpi => Mm</button>
           </router-link>
           <router-link :to="{name:'template'}">
-            <button class="router_button"><a class="router_link" href="/tepmlate"></a>PRN & PDFT</button>
+            <button class="router_button"><a class="router_link" href="/tepmlate"></a>PRN & PDF</button>
           </router-link>
           <img src="@/assets/gif/scratch_one-s_head.gif" alt="">
         </div>
@@ -30,9 +30,7 @@ export default {
   components: {},
   props: {},
   data () {
-    return {
-      containers: []
-    }
+    return {}
   },
   computed: {}
 

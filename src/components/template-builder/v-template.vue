@@ -26,7 +26,7 @@
             <vBuilderForCustom />
           </div>
           <div class="v-build-components">
-            <vBuilderForPDFT />
+            <vBuilderForPDF />
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ import vTicketFor from '@/components/template-builder/v-ticket-for.vue'
 import vBuilderForCitizen from '@/components/template-builder/v-builder-for-citizen.vue'
 import vBuilderForDatamax from '@/components/template-builder/v-builder-for-datamax.vue'
 import vBuilderForCustom from '@/components/template-builder/v-builder-for-custom.vue'
-import vBuilderForPDFT from '@/components/template-builder/v-builder-for-pdft.vue'
+import vBuilderForPDF from '@/components/template-builder/v-builder-for-pdf.vue'
 
 export default {
   name: 'v-template',
@@ -52,7 +52,7 @@ export default {
     vBuilderForCitizen,
     vBuilderForDatamax,
     vBuilderForCustom,
-    vBuilderForPDFT
+    vBuilderForPDF
   },
   props: {}
 
