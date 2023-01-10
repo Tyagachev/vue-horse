@@ -1,6 +1,9 @@
 <template>
-
-  <div class="template-citizen">
+  <div class="printer_title-wrapper">
+    <h3 class="printer_title">Citizen</h3>
+    <input v-model="visibleBuilderCitizen" id="one" type="checkbox">
+  </div>
+  <div v-show="visibleBuilderCitizen" class="template-citizen">
     <ul class="build_list-padding">
       <li class="build_list" v-for="(el,idx) in arrTop" :key="idx">
         <div class="build_w-text">{{el}}</div>
@@ -35,7 +38,8 @@ export default {
     return {
       arrTop: ['n', 'c0000', 'r', 'O0270', 'f345', 'D', 'L'],
       arrCenter: ['m', 'D11', 'P4', 'S4', 'H15'],
-      arrBottom: ['Q0001', 'E']
+      arrBottom: ['Q0001', 'E'],
+      visibleBuilderCitizen: false
     }
   },
   computed: {},

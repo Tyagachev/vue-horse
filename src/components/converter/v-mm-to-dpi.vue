@@ -6,11 +6,11 @@
           <router-link :to="{name:'home'}">
             <button class="router_button"><a class="router_link" href="/"></a>Home</button>
           </router-link>
-            <router-link :to="{name:'pxtodpi'}">
-              <button class="router_button"><a class="router_link" href="/pxtodpi"></a>Px => Dpi</button>
+            <router-link :to="{name:'px-to-dpi'}">
+              <button class="router_button"><a class="router_link" href="/px-to-dpi"></a>Px => Dpi</button>
             </router-link>
-            <router-link :to="{name:'dpitomm'}">
-              <button class="router_button"><a class="router_link" href="/dpitomm"></a>Dpi => Mm</button>
+            <router-link :to="{name:'dpi-to-mm'}">
+              <button class="router_button"><a class="router_link" href="/dpi-to-mm"></a>Dpi => Mm</button>
             </router-link>
         </div>
             <div class="input_wrp">
@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     ...mapMutations({
-      CalcMmToDpi: 'CalcMmToDpi'
+      CalcMmToDpi: 'CALC_MM_TO_DPI'
     })
   }
 }

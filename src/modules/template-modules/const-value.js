@@ -7,6 +7,9 @@ export default {
     inchDPI: 8,
     pinVisible: 'none',
     points: 72,
-    visibleTicket: true
+    visibleTicket: true,
+    visibleBuilderCitizen: false,
+    visibleBuilderDatamax: false,
+    visibleBuilderCustom: false
   }
 }

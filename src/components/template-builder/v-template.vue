@@ -12,19 +12,17 @@
             <vTicketFor />
         </div>
       </div>
+      <hr>
       <div class="build-wrp">
         <div class="v-build">
           <div class="v-build-components">
-              <h3>Citizen</h3>
-              <vBuilderForCitizen />
+            <vBuilderForCitizen />
           </div>
           <div class="v-build-components">
-              <h3>Datamax</h3>
-              <vBuilderForDatamax />
-            </div>
-            <div class="v-build-components">
-              <h3>Custom</h3>
-              <vBuilderForCustom />
+            <vBuilderForDatamax />
+          </div>
+          <div class="v-build-components">
+            <vBuilderForCustom />
           </div>
         </div>
       </div>

@@ -1,6 +1,9 @@
 <template>
-
-  <div class="template-datamax">
+  <div class="printer_title-wrapper">
+    <h3 class="printer_title">Datamax</h3>
+    <input v-model="$store.state.constValue.visibleBuilderDatamax" id="two" type="checkbox">
+  </div>
+  <div v-show="$store.state.constValue.visibleBuilderDatamax" class="template-datamax">
     <ul class="build_list-padding">
       <li class="build_list" v-for="(el,idx) in arrTop" :key="idx">
         <div class="build_w-text">{{el}}</div>

@@ -1,5 +1,9 @@
 <template>
-  <div class="template-custom">
+  <div class="printer_title-wrapper">
+    <h3 class="printer_title">Custom</h3>
+    <input v-model="$store.state.constValue.visibleBuilderCustom" id="three" type="checkbox">
+  </div>
+  <div v-show="$store.state.constValue.visibleBuilderCustom" class="template-custom">
     <ul>
       <li class="build_list" v-for="(el,idx) in arrTop" :key="idx">
         <div class="build_w">{{el}}</div>
@@ -50,6 +54,7 @@ export default {
       arrBottom: ['<P>', '<CUT>'],
       textHorizontal: '<NR>',
       textRotateСlockwise: '<RL>'
+
     }
   },
   computed: {},

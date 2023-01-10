@@ -23,7 +23,7 @@ export default {
   },
 
   mutations: {
-    CalcMmToDpi (state) {
+    CALC_MM_TO_DPI: (state) => {
       state.result_width_dpi = Math.floor(((state.width_mm * state.points) / state.inch) * 100) / 100
       state.result_height_dpi = Math.floor(((state.height_mm * state.points) / state.inch) * 100) / 100
 
@@ -32,7 +32,7 @@ export default {
       }
     },
 
-    CalcPxToDpi (state) {
+    CALC_PX_TO_DPI: (state) => {
       state.result_width_pxmm = (state.width_px * state.inch) / state.dpiConst
       state.result_height_pxmm = (state.height_px * state.inch) / state.dpiConst
       state.result_width_pxdpi = Math.floor(((state.result_width_pxmm * state.points) / state.inch) * 100) / 100
@@ -43,7 +43,7 @@ export default {
       }
     },
 
-    CalcDpiToMm (state) {
+    CALC_DPI_TO_MM: (state) => {
       state.result_width_mm = Math.floor((state.width_dpi / state.t2) * 1) / 1
       state.result_height_mm = Math.floor((state.height_dpi / state.t2) * 1) / 1
 
