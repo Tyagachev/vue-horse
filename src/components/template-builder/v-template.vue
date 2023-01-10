@@ -14,6 +14,7 @@
       </div>
       <hr>
       <div class="build-wrp">
+        <div><h3>Шаблон билета для:</h3></div>
         <div class="v-build">
           <div class="v-build-components">
             <vBuilderForCitizen />
@@ -23,6 +24,9 @@
           </div>
           <div class="v-build-components">
             <vBuilderForCustom />
+          </div>
+          <div class="v-build-components">
+            <vBuilderForPDFT />
           </div>
         </div>
       </div>
@@ -37,6 +41,7 @@ import vTicketFor from '@/components/template-builder/v-ticket-for.vue'
 import vBuilderForCitizen from '@/components/template-builder/v-builder-for-citizen.vue'
 import vBuilderForDatamax from '@/components/template-builder/v-builder-for-datamax.vue'
 import vBuilderForCustom from '@/components/template-builder/v-builder-for-custom.vue'
+import vBuilderForPDFT from '@/components/template-builder/v-builder-for-pdft.vue'
 
 export default {
   name: 'v-template',
@@ -46,7 +51,8 @@ export default {
     vTicketFor,
     vBuilderForCitizen,
     vBuilderForDatamax,
-    vBuilderForCustom
+    vBuilderForCustom,
+    vBuilderForPDFT
   },
   props: {}
 

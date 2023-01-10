@@ -580,8 +580,8 @@
       <div class="red-info-wrp">
           <p><span class="red-info">*красные символы нужно скопировать из шаблона в системе (Citizen, Datamax)</span></p>
           <p class="black-info">для Custom поле (LHT length, height, notch, dimnotch)</p>
-          <p class="black-info">notch = 40 (отступ до черной метки) 1 мм = 8 dot</p>
-          <p class="black-info">dimnotch = 40 (длина черной метки) 1 мм = 8 dot</p>
+          <p class="black-info">notch = 40 dot (отступ до черной метки) 1 мм = 8 dot</p>
+          <p class="black-info">dimnotch = 40 dot (длина черной метки) 1 мм = 8 dot</p>
       </div>
 
 </template>

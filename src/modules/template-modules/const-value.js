@@ -10,6 +10,7 @@ export default {
     visibleTicket: true,
     visibleBuilderCitizen: false,
     visibleBuilderDatamax: false,
-    visibleBuilderCustom: false
+    visibleBuilderCustom: false,
+    visibleBuilderPdf: false
   }
 }
