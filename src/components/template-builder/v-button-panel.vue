@@ -1010,264 +1010,308 @@ export default {
       this.$store.state.dataBase.db.event_place_title.placeY = (this.setValueTopPlace * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_place_title.originalForCustomY = this.setValueTopPlace * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.event_place_title.originalY = String(this.setValueTopPlace * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.event_place_title.originalForPdfY = Math.floor(((this.setValueTopPlace * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение площадки по X */
     setValueLeftPlace () {
       this.$store.state.dataBase.db.event_place_title.placeX = (this.setValueLeftPlace * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_place_title.originalForCustomX = this.setValueLeftPlace * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.event_place_title.originalX = String((this.setValueLeftPlace * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.event_place_title.originalForPdfX = Math.floor(((this.setValueLeftPlace * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение сектора по Y */
     setValueTopSector () {
       this.$store.state.dataBase.db.sector.sectorY = (this.setValueTopSector * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.sector.originalForCustomY = this.setValueTopSector * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.sector.originalY = String(this.setValueTopSector * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.sector.originalForPdfY = Math.floor(((this.setValueTopSector * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение Сектора по X */
     setValueLeftSector () {
       this.$store.state.dataBase.db.sector.sectorX = (this.setValueLeftSector * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.sector.originalForCustomX = ((this.setValueLeftSector * this.$store.state.constValue.inchDPI) - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI))
       this.$store.state.dataBase.db.sector.originalX = String((this.setValueLeftSector * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.sector.originalForPdfX = Math.floor(((this.setValueLeftSector * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_company по Y */
     setValueTopPromoterComp () {
       this.$store.state.dataBase.db.promoter_company.promoterCompY = (this.setValueTopPromoterComp * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.promoter_company.originalForCustomY = this.setValueTopPromoterComp * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.promoter_company.originalY = String(this.setValueTopPromoterComp * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.promoter_company.originalForPdfY = Math.floor(((this.setValueTopPromoterComp * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_company по X */
     setValueLeftPromoterComp  () {
       this.$store.state.dataBase.db.promoter_company.promoterCompX = (this.setValueLeftPromoterComp * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.promoter_company.originalForCustomX = this.setValueLeftPromoterComp * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.promoter_company.originalX = String((this.setValueLeftPromoterComp * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.promoter_company.originalForPdfX = Math.floor(((this.setValueLeftPromoterComp * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_inn по Y */
     setValueTopPromoterInn () {
       this.$store.state.dataBase.db.promoter_inn.promoterInnY = (this.setValueTopPromoterInn * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.promoter_inn.originalForCustomY = this.setValueTopPromoterInn * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.promoter_inn.originalY = String(this.setValueTopPromoterInn * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.promoter_inn.originalForPdfY = Math.floor(((this.setValueTopPromoterInn * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_inn  по X */
     setValueLeftPromoterInn  () {
       this.$store.state.dataBase.db.promoter_inn.promoterInnX = (this.setValueLeftPromoterInn * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.promoter_inn.originalForCustomX = this.setValueLeftPromoterInn * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.promoter_inn.originalX = String((this.setValueLeftPromoterInn * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.promoter_inn.originalForPdfX = Math.floor(((this.setValueLeftPromoterInn * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_address по Y */
     setValueTopPromoterAddress () {
       this.$store.state.dataBase.db.promoter_address.promoterAddressY = (this.setValueTopPromoterAddress * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.promoter_address.originalForCustomY = this.setValueTopPromoterAddress * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.promoter_address.originalY = String(this.setValueTopPromoterAddress * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.promoter_address.originalForPdfY = Math.floor(((this.setValueTopPromoterAddress * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_address по X */
     setValueLeftPromoterAddress  () {
       this.$store.state.dataBase.db.promoter_address.promoterAddressX = (this.setValueLeftPromoterAddress * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.promoter_address.originalForCustomX = this.setValueLeftPromoterAddress * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.promoter_address.originalX = String((this.setValueLeftPromoterAddress * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.promoter_address.originalForPdfX = Math.floor(((this.setValueLeftPromoterAddress * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str1 по Y */
     setValueTopEventTitleStrOne () {
       this.$store.state.dataBase.db.event_title_str1.eventTitleStrOneY = (this.setValueTopEventTitleStrOne * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_title_str1.originalForCustomY = this.setValueTopEventTitleStrOne * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.event_title_str1.originalY = String(this.setValueTopEventTitleStrOne * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.event_title_str1.originalForPdfY = Math.floor(((this.setValueTopEventTitleStrOne * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str1 по X */
     setValueLeftEventTitleStrOne  () {
       this.$store.state.dataBase.db.event_title_str1.eventTitleStrOneX = (this.setValueLeftEventTitleStrOne * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_title_str1.originalForCustomX = this.setValueLeftEventTitleStrOne * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.event_title_str1.originalX = String((this.setValueLeftEventTitleStrOne * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.event_title_str1.originalForPdfX = Math.floor(((this.setValueLeftEventTitleStrOne * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str2 по Y */
     setValueTopEventTitleStrTwo () {
       this.$store.state.dataBase.db.event_title_str2.eventTitleStrTwoY = (this.setValueTopEventTitleStrTwo * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_title_str2.originalForCustomY = this.setValueTopEventTitleStrTwo * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.event_title_str2.originalY = String(this.setValueTopEventTitleStrTwo * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.event_title_str2.originalForPdfY = Math.floor(((this.setValueTopEventTitleStrTwo * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str2 по X */
     setValueLeftEventTitleStrTwo  () {
       this.$store.state.dataBase.db.event_title_str2.eventTitleStrTwoX = (this.setValueLeftEventTitleStrTwo * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_title_str2.originalForCustomX = this.setValueLeftEventTitleStrTwo * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.event_title_str2.originalX = String((this.setValueLeftEventTitleStrTwo * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.event_title_str2.originalForPdfX = Math.floor(((this.setValueLeftEventTitleStrTwo * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str3 по Y */
     setValueTopEventTitleStrThree () {
       this.$store.state.dataBase.db.event_title_str3.eventTitleStrThreeY = (this.setValueTopEventTitleStrThree * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_title_str3.originalForCustomY = this.setValueTopEventTitleStrThree * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.event_title_str3.originalY = String(this.setValueTopEventTitleStrThree * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.event_title_str3.originalForPdfY = Math.floor(((this.setValueTopEventTitleStrThree * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str3 по X */
     setValueLeftEventTitleStrThree  () {
       this.$store.state.dataBase.db.event_title_str3.eventTitleStrThreeX = (this.setValueLeftEventTitleStrThree * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_title_str3.originalForCustomX = this.setValueLeftEventTitleStrThree * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.event_title_str3.originalX = String((this.setValueLeftEventTitleStrThree * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.event_title_str3.originalForPdfX = Math.floor(((this.setValueLeftEventTitleStrThree * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance по Y */
     setValueTopEventSeance () {
       this.$store.state.dataBase.db.event_seance.eventSeanceY = (this.setValueTopEventSeance * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_seance.originalForCustomY = this.setValueTopEventSeance * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.event_seance.originalY = String(this.setValueTopEventSeance * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.event_seance.originalForPdfY = Math.floor(((this.setValueTopEventSeance * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance по X */
     setValueLeftEventSeance () {
       this.$store.state.dataBase.db.event_seance.eventSeanceX = (this.setValueLeftEventSeance * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_seance.originalForCustomX = this.setValueLeftEventSeance * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.event_seance.originalX = String((this.setValueLeftEventSeance * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.event_seance.originalForPdfX = Math.floor(((this.setValueLeftEventSeance * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance_start_date по Y */
     setValueTopStartDate () {
       this.$store.state.dataBase.db.event_seance_start_date.eventStartDateY = (this.setValueTopStartDate * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_seance_start_date.originalForCustomY = this.setValueTopStartDate * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.event_seance_start_date.originalY = String(this.setValueTopStartDate * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.event_seance_start_date.originalForPdfY = Math.floor(((this.setValueTopStartDate * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance_start_date по X */
     setValueLeftStartDate () {
       this.$store.state.dataBase.db.event_seance_start_date.eventStartDateX = (this.setValueLeftStartDate * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_seance_start_date.originalForCustomX = this.setValueLeftStartDate * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.event_seance_start_date.originalX = String((this.setValueLeftStartDate * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.event_seance_start_date.originalForPdfX = Math.floor(((this.setValueLeftStartDate * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance_start_time по Y */
     setValueTopStartTime () {
       this.$store.state.dataBase.db.event_seance_start_time.eventStartTimeY = (this.setValueTopStartTime * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_seance_start_time.originalForCustomY = this.setValueTopStartTime * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.event_seance_start_time.originalY = String(this.setValueTopStartTime * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.event_seance_start_time.originalForPdfY = Math.floor(((this.setValueTopStartTime * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance_start_time по X */
     setValueLeftStartTime () {
       this.$store.state.dataBase.db.event_seance_start_time.eventStartTimeX = (this.setValueLeftStartTime * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.event_seance_start_time.originalForCustomX = this.setValueLeftStartTime * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.event_seance_start_time.originalX = String((this.setValueLeftStartTime * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.event_seance_start_time.originalForPdfX = Math.floor(((this.setValueLeftStartTime * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_site_place по Y */
     setValueTopTicketPlace () {
       this.$store.state.dataBase.db.ticket_site_place.ticketPlaceY = (this.setValueTopTicketPlace * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.ticket_site_place.originalForCustomY = this.setValueTopTicketPlace * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.ticket_site_place.originalY = String(this.setValueTopTicketPlace * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.ticket_site_place.originalForPdfY = Math.floor(((this.setValueTopTicketPlace * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_site_place по X */
     setValueLeftTicketPlace () {
       this.$store.state.dataBase.db.ticket_site_place.ticketPlaceX = (this.setValueLeftTicketPlace * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.ticket_site_place.originalForCustomX = this.setValueLeftTicketPlace * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.ticket_site_place.originalX = String((this.setValueLeftTicketPlace * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.ticket_site_place.originalForPdfX = Math.floor(((this.setValueLeftTicketPlace * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_row по Y */
     setValueTopSpecialRulesOne () {
       this.$store.state.dataBase.db.ticket_row.specialRulesOneY = (this.setValueTopSpecialRulesOne * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.ticket_row.originalForCustomY = this.setValueTopSpecialRulesOne * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.ticket_row.originalY = String(this.setValueTopSpecialRulesOne * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.ticket_row.originalForPdfY = Math.floor(((this.setValueTopSpecialRulesOne * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_row по X */
     setValueLeftSpecialRulesOne () {
       this.$store.state.dataBase.db.ticket_row.specialRulesOneX = (this.setValueLeftSpecialRulesOne * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.ticket_row.originalForCustomX = this.setValueLeftSpecialRulesOne * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.ticket_row.originalX = String((this.setValueLeftSpecialRulesOne * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.ticket_row.originalForPdfX = Math.floor(((this.setValueLeftSpecialRulesOne * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_place по Y */
     setValueTopSpecialRulesTwo () {
       this.$store.state.dataBase.db.ticket_place.specialRulesTwoY = (this.setValueTopSpecialRulesTwo * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.ticket_place.originalForCustomY = this.setValueTopSpecialRulesTwo * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.ticket_place.originalY = String(this.setValueTopSpecialRulesTwo * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.ticket_place.originalForPdfY = Math.floor(((this.setValueTopSpecialRulesTwo * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_place по X */
     setValueLeftSpecialRulesTwo () {
       this.$store.state.dataBase.db.ticket_place.specialRulesTwoX = (this.setValueLeftSpecialRulesTwo * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.ticket_place.originalForCustomX = this.setValueLeftSpecialRulesTwo * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.ticket_place.originalX = String((this.setValueLeftSpecialRulesTwo * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.ticket_place.originalForPdfX = Math.floor(((this.setValueLeftSpecialRulesTwo * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение age_limit по Y */
     setValueTopAgeLimit () {
       this.$store.state.dataBase.db.age_limit.ageLimitY = (this.setValueTopAgeLimit * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.age_limit.originalForCustomY = this.setValueTopAgeLimit * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.age_limit.originalY = String(this.setValueTopAgeLimit * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.age_limit.originalForPdfY = Math.floor(((this.setValueTopAgeLimit * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение age_limit по X */
     setValueLeftAgeLimit () {
       this.$store.state.dataBase.db.age_limit.ageLimitX = (this.setValueLeftAgeLimit * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.age_limit.originalForCustomX = this.setValueLeftAgeLimit * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.age_limit.originalX = String((this.setValueLeftAgeLimit * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.age_limit.originalForPdfX = Math.floor(((this.setValueLeftAgeLimit * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_ticket по Y */
     setValueTopCaseTicket () {
       this.$store.state.dataBase.db.case_ticket.caseTicketY = (this.setValueTopCaseTicket * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.case_ticket.originalForCustomY = this.setValueTopCaseTicket * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.case_ticket.originalY = String(this.setValueTopCaseTicket * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.case_ticket.originalForPdfY = Math.floor(((this.setValueTopCaseTicket * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_ticket по X */
     setValueLeftCaseTicket () {
       this.$store.state.dataBase.db.case_ticket.caseTicketX = (this.setValueLeftCaseTicket * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.case_ticket.originalForCustomX = this.setValueLeftCaseTicket * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.case_ticket.originalX = String((this.setValueLeftCaseTicket * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.case_ticket.originalForPdfX = Math.floor(((this.setValueLeftCaseTicket * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_invitation по Y */
     setValueTopСaseInvitation () {
       this.$store.state.dataBase.db.case_invitation.caseInvitationY = (this.setValueTopСaseInvitation * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.case_invitation.originalForCustomY = this.setValueTopСaseInvitation * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.case_invitation.originalY = String(this.setValueTopСaseInvitation * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.case_invitation.originalForPdfY = Math.floor(((this.setValueTopСaseInvitation * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_invitation по X */
     setValueLeftСaseInvitation () {
       this.$store.state.dataBase.db.case_invitation.caseInvitationX = (this.setValueLeftСaseInvitation * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.case_invitation.originalForCustomX = this.setValueLeftСaseInvitation * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.case_invitation.originalX = String((this.setValueLeftСaseInvitation * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.case_invitation.originalForPdfX = Math.floor(((this.setValueLeftСaseInvitation * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_title по Y */
     setValueTopTicketTitle () {
       this.$store.state.dataBase.db.ticket_title.ticketTitleY = (this.setValueTopTicketTitle * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.ticket_title.originalForCustomY = this.setValueTopTicketTitle * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.ticket_title.originalY = String(this.setValueTopTicketTitle * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.ticket_title.originalForPdfY = Math.floor(((this.setValueTopTicketTitle * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_title по X */
     setValueLeftTicketTitle () {
       this.$store.state.dataBase.db.ticket_title.ticketTitleX = (this.setValueLeftTicketTitle * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.ticket_title.originalForCustomX = this.setValueLeftTicketTitle * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.ticket_title.originalX = String((this.setValueLeftTicketTitle * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.ticket_title.originalForPdfX = Math.floor(((this.setValueLeftTicketTitle * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_sale по Y */
     setValueTopTicketSale () {
       this.$store.state.dataBase.db.ticket_sale.ticketSaleY = (this.setValueTopTicketSale * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.ticket_sale.originalForCustomY = this.setValueTopTicketSale * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.ticket_sale.originalY = String(this.setValueTopTicketSale * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.ticket_sale.originalForPdfY = Math.floor(((this.setValueTopTicketSale * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_sale по X */
     setValueLeftTicketSale () {
       this.$store.state.dataBase.db.ticket_sale.ticketSaleX = (this.setValueLeftTicketSale * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.ticket_sale.originalForCustomX = this.setValueLeftTicketSale * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.ticket_sale.originalX = String((this.setValueLeftTicketSale * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.ticket_sale.originalForPdfX = Math.floor(((this.setValueLeftTicketSale * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение cashier_name по Y */
     setValueTopCashierName () {
       this.$store.state.dataBase.db.cashier_name.cashierNameY = (this.setValueTopCashierName * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.cashier_name.originalForCustomY = this.setValueTopCashierName * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.cashier_name.originalY = String(this.setValueTopCashierName * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.cashier_name.originalForPdfY = Math.floor(((this.setValueTopCashierName * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение cashier_name по X */
     setValueLeftCashierName () {
       this.$store.state.dataBase.db.cashier_name.cashierNameX = (this.setValueLeftCashierName * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.cashier_name.originalForCustomX = this.setValueLeftCashierName * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.cashier_name.originalX = String((this.setValueLeftCashierName * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.cashier_name.originalForPdfX = Math.floor(((this.setValueLeftCashierName * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_pushkin_card по Y */
     setValueTopCasePushkinCard () {
       this.$store.state.dataBase.db.case_pushkin_card.casePushkinCardY = (this.setValueTopCasePushkinCard * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.case_pushkin_card.originalForCustomY = this.setValueTopCasePushkinCard * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.case_pushkin_card.originalY = String(this.setValueTopCasePushkinCard * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.case_pushkin_card.originalForPdfY = Math.floor(((this.setValueTopCasePushkinCard * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_pushkin_card по X */
     setValueLeftCasePushkinCard () {
       this.$store.state.dataBase.db.case_pushkin_card.casePushkinCardX = (this.setValueLeftCasePushkinCard * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.case_pushkin_card.originalForCustomX = this.setValueLeftCasePushkinCard * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.case_pushkin_card.originalX = String((this.setValueLeftCasePushkinCard * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.case_pushkin_card.originalForPdfX = Math.floor(((this.setValueLeftCasePushkinCard * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение field_barcode по Y */
     setValueTopFieldBarcode () {
       this.$store.state.dataBase.db.field_barcode.fieldBarcodeY = (this.setValueTopFieldBarcode * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.field_barcode.originalForCustomY = this.setValueTopFieldBarcode * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.field_barcode.originalY = String(this.setValueTopFieldBarcode * 10).padStart(4, '0')
+      this.$store.state.dataBase.db.field_barcode.originalForPdfY = Math.floor(((this.setValueTopFieldBarcode * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение field_barcode по X */
     setValueLeftFieldBarcode () {
       this.$store.state.dataBase.db.field_barcode.fieldBarcodeX = (this.setValueLeftFieldBarcode * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.field_barcode.originalForCustomX = this.setValueLeftFieldBarcode * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.db.field_barcode.originalX = String((this.setValueLeftFieldBarcode * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.db.field_barcode.originalForPdfX = Math.floor(((this.setValueLeftFieldBarcode * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
 
     /* Корешок билета */
@@ -1276,264 +1320,308 @@ export default {
       this.$store.state.dataBase.dbRootlet.event_place_title.placeY = (this.setValueTopPlaceR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_place_title.originalForCustomY = this.setValueTopPlaceR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.event_place_title.originalY = String(this.setValueTopPlaceR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_place_title.originalForPdfY = Math.floor(((this.setValueTopPlaceR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение площадки по X */
     setValueLeftPlaceR () {
       this.$store.state.dataBase.dbRootlet.event_place_title.placeX = (this.setValueLeftPlaceR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_place_title.originalForCustomX = this.setValueLeftPlaceR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.event_place_title.originalX = String((this.setValueLeftPlaceR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_place_title.originalForPdfX = Math.floor(((this.setValueLeftPlaceR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение сектора по Y */
     setValueTopSectorR () {
       this.$store.state.dataBase.dbRootlet.sector.sectorY = (this.setValueTopSectorR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.sector.originalForCustomY = this.setValueTopSectorR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.sector.originalY = String(this.setValueTopSectorR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.sector.originalForPdfY = Math.floor(((this.setValueTopSectorR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение Сектора по X */
     setValueLeftSectorR () {
       this.$store.state.dataBase.dbRootlet.sector.sectorX = (this.setValueLeftSectorR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.sector.originalForCustomX = this.setValueLeftSectorR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.sector.originalX = String((this.setValueLeftSectorR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.sector.originalForPdfX = Math.floor(((this.setValueLeftSectorR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_company по Y */
     setValueTopPromoterCompR () {
       this.$store.state.dataBase.dbRootlet.promoter_company.promoterCompY = (this.setValueTopPromoterCompR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.promoter_company.originalForCustomY = this.setValueTopPromoterCompR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.promoter_company.originalY = String(this.setValueTopPromoterCompR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.promoter_company.originalForPdfY = Math.floor(((this.setValueTopPromoterCompR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_company по X */
     setValueLeftPromoterCompR  () {
       this.$store.state.dataBase.dbRootlet.promoter_company.promoterCompX = (this.setValueLeftPromoterCompR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.promoter_company.originalForCustomX = this.setValueLeftPromoterCompR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.promoter_company.originalX = String((this.setValueLeftPromoterCompR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.promoter_company.originalForPdfX = Math.floor(((this.setValueLeftPromoterCompR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_inn по Y */
     setValueTopPromoterInnR () {
       this.$store.state.dataBase.dbRootlet.promoter_inn.promoterInnY = (this.setValueTopPromoterInnR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.promoter_inn.originalForCustomY = this.setValueTopPromoterInnR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.promoter_inn.originalY = String(this.setValueTopPromoterInnR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.promoter_inn.originalForPdfY = Math.floor(((this.setValueTopPromoterInnR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_inn  по X */
     setValueLeftPromoterInnR  () {
       this.$store.state.dataBase.dbRootlet.promoter_inn.promoterInnX = (this.setValueLeftPromoterInnR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.promoter_inn.originalForCustomX = this.setValueLeftPromoterInnR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.promoter_inn.originalX = String((this.setValueLeftPromoterInnR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.promoter_inn.originalForPdfX = Math.floor(((this.setValueLeftPromoterInnR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_address по Y */
     setValueTopPromoterAddressR () {
       this.$store.state.dataBase.dbRootlet.promoter_address.promoterAddressY = (this.setValueTopPromoterAddressR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.promoter_address.originalForCustomY = this.setValueTopPromoterAddressR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.promoter_address.originalY = String(this.setValueTopPromoterAddressR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.promoter_address.originalForPdfY = Math.floor(((this.setValueTopPromoterAddressR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение promoter_address по X */
     setValueLeftPromoterAddressR  () {
       this.$store.state.dataBase.dbRootlet.promoter_address.promoterAddressX = (this.setValueLeftPromoterAddressR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.promoter_address.originalForCustomX = this.setValueLeftPromoterAddressR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.promoter_address.originalX = String((this.setValueLeftPromoterAddressR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.promoter_address.originalForPdfX = Math.floor(((this.setValueLeftPromoterAddressR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str1 по Y */
     setValueTopEventTitleStrOneR () {
       this.$store.state.dataBase.dbRootlet.event_title_str1.eventTitleStrOneY = (this.setValueTopEventTitleStrOneR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_title_str1.originalForCustomY = this.setValueTopEventTitleStrOneR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.event_title_str1.originalY = String(this.setValueTopEventTitleStrOneR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_title_str1.originalForPdfY = Math.floor(((this.setValueTopEventTitleStrOneR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str1 по X */
     setValueLeftEventTitleStrOneR  () {
       this.$store.state.dataBase.dbRootlet.event_title_str1.eventTitleStrOneX = (this.setValueLeftEventTitleStrOneR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_title_str1.originalForCustomX = this.setValueLeftEventTitleStrOneR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.event_title_str1.originalX = String((this.setValueLeftEventTitleStrOneR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_title_str1.originalForPdfX = Math.floor(((this.setValueLeftEventTitleStrOneR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str2 по Y */
     setValueTopEventTitleStrTwoR () {
       this.$store.state.dataBase.dbRootlet.event_title_str2.eventTitleStrTwoY = (this.setValueTopEventTitleStrTwoR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_title_str2.originalForCustomY = this.setValueTopEventTitleStrTwoR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.event_title_str2.originalY = String(this.setValueTopEventTitleStrTwoR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_title_str2.originalForPdfY = Math.floor(((this.setValueTopEventTitleStrTwoR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str2 по X */
     setValueLeftEventTitleStrTwoR  () {
       this.$store.state.dataBase.dbRootlet.event_title_str2.eventTitleStrTwoX = (this.setValueLeftEventTitleStrTwoR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_title_str2.originalForCustomX = this.setValueLeftEventTitleStrTwoR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.event_title_str2.originalX = String((this.setValueLeftEventTitleStrTwoR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_title_str2.originalForPdfX = Math.floor(((this.setValueLeftEventTitleStrTwoR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str3 по Y */
     setValueTopEventTitleStrThreeR () {
       this.$store.state.dataBase.dbRootlet.event_title_str3.eventTitleStrThreeY = (this.setValueTopEventTitleStrThreeR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_title_str3.originalForCustomY = this.setValueTopEventTitleStrThreeR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.event_title_str3.originalY = String(this.setValueTopEventTitleStrThreeR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_title_str3.originalForPdfY = Math.floor(((this.setValueTopEventTitleStrThreeR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_title_str3 по X */
     setValueLeftEventTitleStrThreeR  () {
       this.$store.state.dataBase.dbRootlet.event_title_str3.eventTitleStrThreeX = (this.setValueLeftEventTitleStrThreeR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_title_str3.originalForCustomX = this.setValueLeftEventTitleStrThreeR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.event_title_str3.originalX = String((this.setValueLeftEventTitleStrThreeR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_title_str3.originalForPdfX = Math.floor(((this.setValueLeftEventTitleStrThreeR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance по Y */
     setValueTopEventSeanceR () {
       this.$store.state.dataBase.dbRootlet.event_seance.eventSeanceY = (this.setValueTopEventSeanceR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_seance.originalForCustomY = this.setValueTopEventSeanceR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.event_seance.originalY = String(this.setValueTopEventSeanceR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_seance.originalForPdfY = Math.floor(((this.setValueTopEventSeanceR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance по X */
     setValueLeftEventSeanceR () {
       this.$store.state.dataBase.dbRootlet.event_seance.eventSeanceX = (this.setValueLeftEventSeanceR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_seance.originalForCustomX = this.setValueLeftEventSeanceR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.event_seance.originalX = String((this.setValueLeftEventSeanceR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_seance.originalForPdfX = Math.floor(((this.setValueLeftEventSeanceR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance_start_date по Y */
     setValueTopStartDateR () {
       this.$store.state.dataBase.dbRootlet.event_seance_start_date.eventStartDateY = (this.setValueTopStartDateR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_seance_start_date.originalForCustomY = this.setValueTopStartDateR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.event_seance_start_date.originalY = String(this.setValueTopStartDateR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_seance_start_date.originalForPdfY = Math.floor(((this.setValueTopStartDateR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance_start_date по X */
     setValueLeftStartDateR () {
       this.$store.state.dataBase.dbRootlet.event_seance_start_date.eventStartDateX = (this.setValueLeftStartDateR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_seance_start_date.originalForCustomX = this.setValueLeftStartDateR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.event_seance_start_date.originalX = String((this.setValueLeftStartDateR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_seance_start_date.originalForPdfX = Math.floor(((this.setValueLeftStartDateR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance_start_time по Y */
     setValueTopStartTimeR () {
       this.$store.state.dataBase.dbRootlet.event_seance_start_time.eventStartTimeY = (this.setValueTopStartTimeR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_seance_start_time.originalForCustomY = this.setValueTopStartTimeR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.event_seance_start_time.originalY = String(this.setValueTopStartTimeR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_seance_start_time.originalForPdfY = Math.floor(((this.setValueTopStartTimeR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение event_seance_start_time по X */
     setValueLeftStartTimeR () {
       this.$store.state.dataBase.dbRootlet.event_seance_start_time.eventStartTimeX = (this.setValueLeftStartTimeR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.event_seance_start_time.originalForCustomX = this.setValueLeftStartTimeR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.event_seance_start_time.originalX = String((this.setValueLeftStartTimeR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.event_seance_start_time.originalForPdfX = Math.floor(((this.setValueLeftStartTimeR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_site_place по Y */
     setValueTopTicketPlaceR () {
       this.$store.state.dataBase.dbRootlet.ticket_site_place.ticketPlaceY = (this.setValueTopTicketPlaceR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.ticket_site_place.originalForCustomY = this.setValueTopTicketPlaceR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.ticket_site_place.originalY = String(this.setValueTopTicketPlaceR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.ticket_site_place.originalForPdfY = Math.floor(((this.setValueTopTicketPlaceR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_site_place по X */
     setValueLeftTicketPlaceR () {
       this.$store.state.dataBase.dbRootlet.ticket_site_place.ticketPlaceX = (this.setValueLeftTicketPlaceR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.ticket_site_place.originalForCustomX = this.setValueLeftTicketPlaceR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.ticket_site_place.originalX = String((this.setValueLeftTicketPlaceR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.ticket_site_place.originalForPdfX = Math.floor(((this.setValueLeftTicketPlaceR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_row по Y */
     setValueTopSpecialRulesOneR () {
       this.$store.state.dataBase.dbRootlet.ticket_row.specialRulesOneY = (this.setValueTopSpecialRulesOneR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.ticket_row.originalForCustomY = this.setValueTopSpecialRulesOneR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.ticket_row.originalY = String(this.setValueTopSpecialRulesOneR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.ticket_row.originalForPdfY = Math.floor(((this.setValueTopSpecialRulesOneR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_row по X */
     setValueLeftSpecialRulesOneR () {
       this.$store.state.dataBase.dbRootlet.ticket_row.specialRulesOneX = (this.setValueLeftSpecialRulesOneR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.ticket_row.originalForCustomX = this.setValueLeftSpecialRulesOneR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.ticket_row.originalX = String((this.setValueLeftSpecialRulesOneR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.ticket_row.originalForPdfX = Math.floor(((this.setValueLeftSpecialRulesOneR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_place по Y */
     setValueTopSpecialRulesTwoR () {
       this.$store.state.dataBase.dbRootlet.ticket_place.specialRulesTwoY = (this.setValueTopSpecialRulesTwoR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.ticket_place.originalForCustomY = this.setValueTopSpecialRulesTwoR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.ticket_place.originalY = String(this.setValueTopSpecialRulesTwoR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.ticket_place.originalForPdfY = Math.floor(((this.setValueTopSpecialRulesTwoR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_place по X */
     setValueLeftSpecialRulesTwoR () {
       this.$store.state.dataBase.dbRootlet.ticket_place.specialRulesTwoX = (this.setValueLeftSpecialRulesTwoR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.ticket_place.originalForCustomX = this.setValueLeftSpecialRulesTwoR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.ticket_place.originalX = String((this.setValueLeftSpecialRulesTwoR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.ticket_place.originalForPdfX = Math.floor(((this.setValueLeftSpecialRulesTwoR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение age_limit по Y */
     setValueTopAgeLimitR () {
       this.$store.state.dataBase.dbRootlet.age_limit.ageLimitY = (this.setValueTopAgeLimitR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.age_limit.originalForCustomY = this.setValueTopAgeLimitR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.age_limit.originalY = String(this.setValueTopAgeLimitR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.age_limit.originalForPdfY = Math.floor(((this.setValueTopAgeLimitR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение age_limit по X */
     setValueLeftAgeLimitR () {
       this.$store.state.dataBase.dbRootlet.age_limit.ageLimitX = (this.setValueLeftAgeLimitR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.age_limit.originalForCustomX = this.setValueLeftAgeLimitR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.age_limit.originalX = String((this.setValueLeftAgeLimitR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.age_limit.originalForPdfX = Math.floor(((this.setValueLeftAgeLimitR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_ticket по Y */
     setValueTopCaseTicketR () {
       this.$store.state.dataBase.dbRootlet.case_ticket.caseTicketY = (this.setValueTopCaseTicketR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.case_ticket.originalForCustomY = this.setValueTopCaseTicketR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.case_ticket.originalY = String(this.setValueTopCaseTicketR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.case_ticket.originalForPdfY = Math.floor(((this.setValueTopCaseTicketR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_ticket по X */
     setValueLeftCaseTicketR () {
       this.$store.state.dataBase.dbRootlet.case_ticket.caseTicketX = (this.setValueLeftCaseTicketR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.case_ticket.originalForCustomX = this.setValueLeftCaseTicketR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.case_ticket.originalX = String((this.setValueLeftCaseTicketR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.case_ticket.originalForPdfX = Math.floor(((this.setValueLeftCaseTicketR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_invitation по Y */
     setValueTopСaseInvitationR () {
       this.$store.state.dataBase.dbRootlet.case_invitation.caseInvitationY = (this.setValueTopСaseInvitationR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.case_invitation.originalForCustomY = this.setValueTopСaseInvitationR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.case_invitation.originalY = String(this.setValueTopСaseInvitationR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.case_invitation.originalForPdfY = Math.floor(((this.setValueTopСaseInvitationR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_invitation по X */
     setValueLeftСaseInvitationR () {
       this.$store.state.dataBase.dbRootlet.case_invitation.caseInvitationX = (this.setValueLeftСaseInvitationR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.case_invitation.originalForCustomX = this.setValueLeftСaseInvitationR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.case_invitation.originalX = String((this.setValueLeftСaseInvitationR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.case_invitation.originalForPdfX = Math.floor(((this.setValueLeftСaseInvitationR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_title по Y */
     setValueTopTicketTitleR () {
       this.$store.state.dataBase.dbRootlet.ticket_title.ticketTitleY = (this.setValueTopTicketTitleR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.ticket_title.originalForCustomY = this.setValueTopTicketTitleR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.ticket_title.originalY = String(this.setValueTopTicketTitleR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.ticket_title.originalForPdfY = Math.floor(((this.setValueTopTicketTitleR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_title по X */
     setValueLeftTicketTitleR () {
       this.$store.state.dataBase.dbRootlet.ticket_title.ticketTitleX = (this.setValueLeftTicketTitleR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.ticket_title.originalForCustomX = this.setValueLeftTicketTitleR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.ticket_title.originalX = String((this.setValueLeftTicketTitleR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.ticket_title.originalForPdfX = Math.floor(((this.setValueLeftTicketTitleR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_sale по Y */
     setValueTopTicketSaleR () {
       this.$store.state.dataBase.dbRootlet.ticket_sale.ticketSaleY = (this.setValueTopTicketSaleR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.ticket_sale.originalForCustomY = this.setValueTopTicketSaleR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.ticket_sale.originalY = String(this.setValueTopTicketSaleR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.ticket_sale.originalForPdfY = Math.floor(((this.setValueTopTicketSaleR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение ticket_sale по X */
     setValueLeftTicketSaleR () {
       this.$store.state.dataBase.dbRootlet.ticket_sale.ticketSaleX = (this.setValueLeftTicketSaleR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.ticket_sale.originalForCustomX = this.setValueLeftTicketSaleR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.ticket_sale.originalX = String((this.setValueLeftTicketSaleR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.ticket_sale.originalForPdfX = Math.floor(((this.setValueLeftTicketSaleR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение cashier_name по Y */
     setValueTopCashierNameR () {
       this.$store.state.dataBase.dbRootlet.cashier_name.cashierNameY = (this.setValueTopCashierNameR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.cashier_name.originalForCustomY = this.setValueTopCashierNameR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.cashier_name.originalY = String(this.setValueTopCashierNameR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.cashier_name.originalForPdfY = Math.floor(((this.setValueTopCashierNameR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение cashier_name по X */
     setValueLeftCashierNameR () {
       this.$store.state.dataBase.dbRootlet.cashier_name.cashierNameX = (this.setValueLeftCashierNameR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.cashier_name.originalForCustomX = this.setValueLeftCashierNameR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.cashier_name.originalX = String((this.setValueLeftCashierNameR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.cashier_name.originalForPdfX = Math.floor(((this.setValueLeftCashierNameR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_pushkin_card по Y */
     setValueTopCasePushkinCardR () {
       this.$store.state.dataBase.dbRootlet.case_pushkin_card.casePushkinCardY = (this.setValueTopCasePushkinCardR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.case_pushkin_card.originalForCustomY = this.setValueTopCasePushkinCardR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.case_pushkin_card.originalY = String(this.setValueTopCasePushkinCardR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.case_pushkin_card.originalForPdfY = Math.floor(((this.setValueTopCasePushkinCardR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение case_pushkin_card по X */
     setValueLeftCasePushkinCardR () {
       this.$store.state.dataBase.dbRootlet.case_pushkin_card.casePushkinCardX = (this.setValueLeftCasePushkinCardR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.case_pushkin_card.originalForCustomX = this.setValueLeftCasePushkinCardR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.case_pushkin_card.originalX = String((this.setValueLeftCasePushkinCardR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.case_pushkin_card.originalForPdfX = Math.floor(((this.setValueLeftCasePushkinCardR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение field_barcode по Y */
     setValueTopFieldBarcodeR () {
       this.$store.state.dataBase.dbRootlet.field_barcode.fieldBarcodeY = (this.setValueTopFieldBarcodeR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.field_barcode.originalForCustomY = this.setValueTopFieldBarcodeR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.field_barcode.originalY = String(this.setValueTopFieldBarcodeR * 10).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.field_barcode.originalForPdfY = Math.floor(((this.setValueTopFieldBarcodeR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     },
     /* Смещение field_barcode по X */
     setValueLeftFieldBarcodeR () {
       this.$store.state.dataBase.dbRootlet.field_barcode.fieldBarcodeX = (this.setValueLeftFieldBarcodeR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.field_barcode.originalForCustomX = this.setValueLeftFieldBarcodeR * this.$store.state.constValue.inchDPI - (this.$store.state.variableTicket.blackLabel * this.$store.state.constValue.inchDPI)
       this.$store.state.dataBase.dbRootlet.field_barcode.originalX = String((this.setValueLeftFieldBarcodeR * 10) - (this.$store.state.variableTicket.blackLabel * 10)).padStart(4, '0')
+      this.$store.state.dataBase.dbRootlet.field_barcode.originalForPdfX = Math.floor(((this.setValueLeftFieldBarcodeR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
     }
   },
   methods: {

@@ -9,6 +9,8 @@ export default {
     */
     resultTicketWidth: '',
     resultTicketHeight: '',
+    resultTicketWidthPDF: '',
+    resultTicketHeightPDF: '',
     /*
     *Управление шириной корешка и контроля
     */
