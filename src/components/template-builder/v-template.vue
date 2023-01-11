@@ -1,37 +1,36 @@
 <template>
-
-<div class="template-bckg">
-    <div class="test_body">
-        <div class="v-test">
-          <vTicket />
-          <div class="wrapper">
-            <vButtonPanel />
+  <!--Блок компонентов-->
+  <div class="template-bckg">
+      <div class="test_body">
+          <div class="v-test">
+            <vTicket />
+            <div class="wrapper">
+              <vButtonPanel />
+            </div>
+          </div>
+          <div class="ticket_wrp">
+              <vTicketFor />
           </div>
         </div>
-        <div class="ticket_wrp">
-            <vTicketFor />
-        </div>
-      </div>
-      <hr>
-      <div class="build-wrp">
-        <div><h3>Шаблон билета для:</h3></div>
-        <div class="v-build">
-          <div class="v-build-components">
-            <vBuilderForCitizen />
-          </div>
-          <div class="v-build-components">
-            <vBuilderForDatamax />
-          </div>
-          <div class="v-build-components">
-            <vBuilderForCustom />
-          </div>
-          <div class="v-build-components">
-            <vBuilderForPDF />
+        <hr>
+        <div class="build-wrp">
+          <div><h3>Шаблон билета для:</h3></div>
+          <div class="v-build">
+            <div class="v-build-components">
+              <vBuilderForCitizen />
+            </div>
+            <div class="v-build-components">
+              <vBuilderForDatamax />
+            </div>
+            <div class="v-build-components">
+              <vBuilderForCustom />
+            </div>
+            <div class="v-build-components">
+              <vBuilderForPDF />
+            </div>
           </div>
         </div>
-      </div>
-</div>
-
+  </div>
 </template>
 
 <script>
