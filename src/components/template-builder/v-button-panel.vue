@@ -1304,7 +1304,7 @@ export default {
       this.$store.state.dataBase.db.field_barcode.fieldBarcodeY = (this.setValueTopFieldBarcode * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.db.field_barcode.originalForCustomY = this.setValueTopFieldBarcode * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.db.field_barcode.originalY = String(this.setValueTopFieldBarcode * 10).padStart(4, '0')
-      this.$store.state.dataBase.db.field_barcode.originalForPdfY = Math.floor(((this.setValueTopFieldBarcode * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
+      this.$store.state.dataBase.db.field_barcode.originalForPdfY = (Math.floor(((this.setValueTopFieldBarcode * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100) - 40
     },
     /* Смещение field_barcode по X */
     setValueLeftFieldBarcode () {
@@ -1614,7 +1614,7 @@ export default {
       this.$store.state.dataBase.dbRootlet.field_barcode.fieldBarcodeY = (this.setValueTopFieldBarcodeR * this.$store.state.constValue.inchPX)
       this.$store.state.dataBase.dbRootlet.field_barcode.originalForCustomY = this.setValueTopFieldBarcodeR * this.$store.state.constValue.inchDPI
       this.$store.state.dataBase.dbRootlet.field_barcode.originalY = String(this.setValueTopFieldBarcodeR * 10).padStart(4, '0')
-      this.$store.state.dataBase.dbRootlet.field_barcode.originalForPdfY = Math.floor(((this.setValueTopFieldBarcodeR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100
+      this.$store.state.dataBase.dbRootlet.field_barcode.originalForPdfY = (Math.floor(((this.setValueTopFieldBarcodeR * this.$store.state.converter.points) / this.$store.state.converter.inch) * 100) / 100) + 100
     },
     /* Смещение field_barcode по X */
     setValueLeftFieldBarcodeR () {

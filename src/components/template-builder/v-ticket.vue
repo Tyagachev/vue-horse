@@ -13,7 +13,7 @@
         <div class="i_wrp-ticket">
           <p class="title">Корешок</p>
           <input v-model="setValueWidthRootlet" class="input__value-ticket" id="ticketWidth" type="number" placeholder="Ширина mm">
-          <button class="btn_all" @click="$store.state.constValue.visibleTicket=!$store.state.constValue.visibleTicket">{{$store.state.constValue.visibleTicket ? 'Билет' : 'Корешок'}}</button>
+          <button class="btn_all" @click="$store.state.constValue.visibleTicket=!$store.state.constValue.visibleTicket">{{ $store.state.constValue.visibleTicket ? 'Билет' : 'Корешок' }}</button>
         </div>
         <div class="i_wrp-ticket">
           <p class="title">Контроль</p>

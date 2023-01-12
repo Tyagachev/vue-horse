@@ -539,7 +539,7 @@ color: rgb(92, 92, 248);
 .template-datamax {
   border: 1px solid #ffffff;
   width: 550px;
-  padding: 10px 0 10px 10px;
+  padding: 10px 10px 10px 10px;
   box-shadow: -1px 0px 8px 0px rgb(34 60 80 / 20%);
   background-color: white;
   margin: 10px 10px 0 0;
@@ -548,7 +548,7 @@ color: rgb(92, 92, 248);
 .template-custom {
   border: 1px solid #ffffff;
   min-width: 550px;
-  padding: 10px 0 10px 10px;
+  padding: 10px 10px 10px 10px;
   box-shadow: -1px 0px 8px 0px rgb(34 60 80 / 20%);
   background-color: white;
   margin: 10px 10px 0 0;
@@ -557,7 +557,7 @@ color: rgb(92, 92, 248);
 .template-pdf {
   border: 1px solid #ffffff;
   min-width: 550px;
-  padding: 10px 0 10px 10px;
+  padding: 10px 10px 10px 10px;
   box-shadow: -1px 0px 8px 0px rgb(34 60 80 / 20%);
   background-color: white;
   margin: 10px 10px 0 0;

@@ -21,8 +21,8 @@
               <div class="giftits" id="gif">
                 <img src="@/assets/gif/by.gif" alt="by" >
             </div>
-          <p>Ширина: {{$store.state.converter.result_width_mm}} mm</p>
-          <p>Высота: {{$store.state.converter.result_height_mm}} mm</p>
+          <p>Ширина: {{ $store.state.converter.result_width_mm }} mm</p>
+          <p>Высота: {{ $store.state.converter.result_height_mm }} mm</p>
           </div>
 
         </div>

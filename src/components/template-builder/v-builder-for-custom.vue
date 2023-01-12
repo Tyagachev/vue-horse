@@ -10,7 +10,7 @@
       </li>
         <div class="build_w">{{ LHT }}{{ $store.state.variableTicket.setValueWidthTicket }},{{ $store.state.variableTicket.setValueHeightTicket }},<span>40,</span><span>40></span></div>
       <li class="build_list" v-for="(el,idx) in arrCenter" :key="idx">
-        <div class="build_n-text">{{el}}</div>
+        <div class="build_n-text">{{ el }}</div>
       </li>
     </ul>
       <p>{{ textRotateСlockwise }}</p>
@@ -34,7 +34,7 @@
       <p></p>
       <ul>
       <li class="build_list" v-for="(el,idx) in arrBottom" :key="idx">
-        <div class="build_n-text">{{el}}</div>
+        <div class="build_n-text">{{ el }}</div>
       </li>
     </ul>
 </div>

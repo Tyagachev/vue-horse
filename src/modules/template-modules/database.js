@@ -459,7 +459,9 @@ export default {
         staticDatamax: '4E00100',
         staticCustom: '{field_barcode_code128}<NCP10,12>{A{field_barcode_code128}',
         tag: '{field_barcode_code128}',
-        barcodeTag: '{field_barcode_code128}'
+        barcodeTag: '{field_barcode_code128}',
+        multicell: 'LinearBarcode(',
+        multicellBarcode: '126, 50'
       },
       event_seance_start_date: {
         name: '31.01.2022',
@@ -971,7 +973,9 @@ export default {
         staticDatamax: '1E00100',
         staticCustom: '{field_barcode_code128}<NCL10,12>{A{field_barcode_code128}',
         tag: '{field_barcode_code128}',
-        barcodeTag: '{field_barcode_code128}'
+        barcodeTag: '{field_barcode_code128}',
+        multicell: 'LinearBarcode(',
+        multicellBarcode: '126, 50'
       },
       event_seance_start_date: {
         name: '31.01.2022',

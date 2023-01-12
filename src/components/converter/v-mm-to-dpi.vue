@@ -21,8 +21,8 @@
                   <div class="giftits" id="gif">
                     <img src="@/assets/gif/by.gif" alt="by" >
                   </div>
-                    <p>Ширина: {{$store.state.converter.result_width_dpi}} dpi</p>
-                    <p>Высота: {{$store.state.converter.result_height_dpi}} dpi</p>
+                    <p>Ширина: {{ $store.state.converter.result_width_dpi }} dpi</p>
+                    <p>Высота: {{ $store.state.converter.result_height_dpi }} dpi</p>
                 </div>
             </div>
     </div>
