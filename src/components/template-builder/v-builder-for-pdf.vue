@@ -16,7 +16,7 @@
     <br>
     <div class="template_list" @click="RemoveIndexTicket(idx)" v-for="(el, idx) in $store.state.arrays.templateArray" :key="idx">
       <div>{{ el.setfont }}</div>
-      <div>{{ el.multicell }} {{ el.originalForPdfX }}, {{ el.originalForPdfY }}, {{ el.multicellBarcode }}{{ bracket }}</div>
+      <div>{{ el.multicell }} {{ el.originalForPdfX }}, {{ el.originalForPdfY }} {{ el.multicellBarcode }}{{ bracket }}</div>
       <br>
     </div>
     <br>
@@ -26,7 +26,7 @@
     <br>
     <div class="template_list" @click="RemoveIndexRootlet(idx)" v-for="(el, idx) in $store.state.arrays.templateArrayRootlet" :key="idx">
       <div>{{ el.setfont }}</div>
-      <div>{{ el.multicell }} -{{ el.originalForPdfY }}, {{ el.originalForPdfX }}, {{ el.multicellBarcode }}{{ bracket }}</div>
+      <div>{{ el.multicell }} -{{ el.originalForPdfY }}, {{ el.originalForPdfX }} {{ el.multicellBarcode }}{{ bracket }}</div>
       <br>
     </div>
     <ul class="build_list-padding">
