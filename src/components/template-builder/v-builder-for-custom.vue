@@ -1,28 +1,32 @@
 <template>
-  <div class="template-custom">
+  <div class="printer_title-wrapper">
+    <h3 class="printer_title">Custom</h3>
+    <input v-model="$store.state.constValue.visibleBuilderCustom" id="three" type="checkbox">
+  </div>
+  <div v-show="$store.state.constValue.visibleBuilderCustom" class="template-custom">
     <ul>
       <li class="build_list" v-for="(el,idx) in arrTop" :key="idx">
-        <div class="build_w">{{el}}</div>
+        <div class="build_w">{{ el }}</div>
       </li>
-        <div class="build_w">{{LHT}}{{$store.state.variableTicket.setValueWidthTicket}},{{$store.state.variableTicket.setValueHeightTicket}},<span>40,</span><span>40></span></div>
+        <div class="build_w">{{ LHT }}{{ $store.state.variableTicket.setValueWidthTicket }},{{ $store.state.variableTicket.setValueHeightTicket }},<span>40,</span><span>40></span></div>
       <li class="build_list" v-for="(el,idx) in arrCenter" :key="idx">
-        <div class="build_n-text">{{el}}</div>
+        <div class="build_n-text">{{ el }}</div>
       </li>
     </ul>
-      <p>{{textRotateСlockwise}}</p>
+      <p>{{ textRotateСlockwise }}</p>
     <ul class="build_list-padding">
       <li class="build_list-custom" @click="RemoveIndexRootlet(idx)" v-for="(el, idx) in $store.state.arrays.templateArrayRootlet" :key="idx">
-        <div>{{el.tag2}}{{el.rcTag}}{{el.originalForCustomY}}<span>,</span>{{el.originalForCustomX}}<span>></span></div>
-        <div>{{el.staticCustom}}{{el.fontSize}}{{el.fontWeight}}{{el.utfTag}}</div>
+        <div>{{ el.tag2 }}{{ el.rcTag }}{{ el.originalForCustomY }}<span>,</span>{{ el.originalForCustomX }}<span>></span></div>
+        <div>{{ el.staticCustom }}{{ el.fontSize }}{{ el.fontWeight }}{{ el.utfTag }}</div>
         <br>
       </li>
     </ul>
     <hr>
-    <p>{{textHorizontal}}</p>
+    <p>{{ textHorizontal }}</p>
     <ul class="build_list-padding">
       <li class="build_list-custom" @click="RemoveIndexTicket(idx)" v-for="(el, idx) in $store.state.arrays.templateArray" :key="idx">
-        <div>{{el.tag2}}{{el.rcTag}}{{el.originalForCustomY}}<span>,</span>{{el.originalForCustomX}}<span>></span></div>
-        <div>{{el.staticCustom}}{{el.fontSize}}{{el.fontWeight}}{{el.utfTag}}</div>
+        <div>{{ el.tag2 }}{{ el.rcTag }}{{ el.originalForCustomY }}<span>,</span>{{ el.originalForCustomX }}<span>></span></div>
+        <div>{{ el.staticCustom }}{{ el.fontSize }}{{ el.fontWeight }}{{ el.utfTag }}</div>
         <br>
       </li>
     </ul>
@@ -30,7 +34,7 @@
       <p></p>
       <ul>
       <li class="build_list" v-for="(el,idx) in arrBottom" :key="idx">
-        <div class="build_n-text">{{el}}</div>
+        <div class="build_n-text">{{ el }}</div>
       </li>
     </ul>
 </div>
@@ -50,6 +54,7 @@ export default {
       arrBottom: ['<P>', '<CUT>'],
       textHorizontal: '<NR>',
       textRotateСlockwise: '<RL>'
+
     }
   },
   computed: {},
