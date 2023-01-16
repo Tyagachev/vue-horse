@@ -1,10 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import vHome from '@/components/home-component/v-home.vue'
-import vMmToDpi from '@/components/converter/v-mm-to-dpi.vue'
-import vDpiToMm from '@/components/converter/v-dpi-to-mm.vue'
-import vPxToDpi from '@/components/converter/v-px-to-dpi.vue'
-import vTemplate from '@/components/template-builder/v-template.vue'
 
 const routes = [
   {
@@ -15,22 +11,22 @@ const routes = [
   {
     path: '/mm-to-dpi',
     name: 'mm-to-dpi',
-    component: vMmToDpi
+    component: () => import(/* webpackChunkName: "mmtodpi" */'@/views/converter/v-mm-to-dpi.vue')
   },
   {
     path: '/dpi-to-mm',
     name: 'dpi-to-mm',
-    component: vDpiToMm
+    component: () => import(/* webpackChunkName: "dpitomm" */'@/views/converter/v-dpi-to-mm.vue')
   },
   {
     path: '/px-to-dpi',
     name: 'px-to-dpi',
-    component: vPxToDpi
+    component: () => import(/* webpackChunkName: "pxtodpi" */'@/views/converter/v-px-to-dpi.vue')
   },
   {
     path: '/template',
     name: 'template',
-    component: vTemplate
+    component: () => import(/* webpackChunkName: "template" */'@/views/template-builder/v-template.vue')
   }
 ]
 
